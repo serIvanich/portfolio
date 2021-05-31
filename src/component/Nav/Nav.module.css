@@ -1,0 +1,10 @@
+
+.navContainer {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    color: ghostwhite;
+    border: 1px solid;
+    border-radius: 2px;
+
+}

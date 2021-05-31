@@ -1,0 +1,52 @@
+
+.skillsBlock {
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+.skillsContainer {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+    border: 1px solid;
+}
+
+
+.allSkills {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.skill {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 3px;
+    background-color: burlywood;
+    color: azure;
+    padding: 10px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 3px;
+    background-color: cadetblue;
+}
+
+.description {
+    text-align: center;
+}

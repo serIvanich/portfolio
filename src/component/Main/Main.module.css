@@ -1,0 +1,30 @@
+
+.mainBlock {
+    height: 100vh;
+    background-color: seashell;
+}
+
+.mainContainer {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid;
+}
+
+.info {
+    border-radius: 3px;
+    background-color: ghostwhite;
+}
+
+.photo {
+    width: 200px;
+    height: 250px;
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: ghostwhite;
+}
