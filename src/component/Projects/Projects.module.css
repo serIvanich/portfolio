@@ -1,13 +1,13 @@
 
 .projectsBlock {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     background-color: khaki;
 }
 
 .projectsContainer {
-    height: 80%;
+    height: 100%;
     width: 80%;
     margin: 0 auto;
 
@@ -22,11 +22,12 @@
 
 .allProjects {
     width: 100%;
-    overflow: auto;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
 
 }
 
@@ -35,7 +36,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-border: 2px solid orange;
+    margin-bottom: 5vh;
+    border: 2px solid orange;
     border-radius: 3px;
     background-color: burlywood;
     color: azure;
@@ -59,11 +61,13 @@ border: 2px solid orange;
 .projectLink {
 
     position: absolute;
-    left: 110px;
+    left: 100px;
     top: 90px;
     width: 100px;
     background-color: crimson;
     text-align: center;
+    text-decoration: none;
+    color: white;
     opacity: .5;
 }
 
