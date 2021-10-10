@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './Contacts.module.css'
+import {Title} from "../../common/component/Title";
 
 
 export const Contacts = () => {
@@ -7,7 +8,7 @@ export const Contacts = () => {
     return (
         <div className={s.contactsBlock}>
             <div className={s.contactsContainer}>
-                <h1>Contacts</h1>
+                <Title title={'Contacts'} />
                 <form className={s.contactsForm}>
                     <input className={s.input}/>
                     <input className={s.input}/>

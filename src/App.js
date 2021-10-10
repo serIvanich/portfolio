@@ -1,11 +1,11 @@
 import './App.css';
-import {Header} from "./component/Header/Header";
-import {Skills} from "./component/Skills/Skills";
-import {Main} from "./component/Main/Main";
-import {Projects} from "./component/Projects/Projects";
-import {RemoveWork} from "./component/RemoveWork/RemoveWork";
-import {Contacts} from "./component/Contacts/Contacts";
-import {Footer} from "./component/Footer/Footer";
+import {Header} from "./features/header/Header";
+import {Skills} from "./features/skills/Skills";
+import {Main} from "./features/main/Main";
+import {Projects} from "./features/projects/Projects";
+import {RemoveWork} from "./features/remove-work/RemoveWork";
+import {Contacts} from "./features/contacts/Contacts";
+import {Footer} from "./features/footer/Footer";
 
 function App() {
     return (
