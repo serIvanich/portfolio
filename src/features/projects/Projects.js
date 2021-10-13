@@ -1,7 +1,11 @@
 import React from 'react'
 import s from './Projects.module.css'
-import {Project} from "./Project";
-import {Title} from "../../common/component/Title";
+import {Project} from './Project';
+import {Title} from '../../common/component/Title';
+import todoImage from './../../assets/image/todo-list-image.jpg'
+import socialNetImage from './../../assets/image/social-network-images.jpg'
+import cardsImage from './../../assets/image/kards-image.jpg'
+import counterImage from './../../assets/image/counter-image.jpg'
 
 
 export const Projects = () => {
@@ -11,14 +15,23 @@ export const Projects = () => {
             <div className={s.projectsContainer}>
                 <Title title={'Projects'}/>
                 <div className={s.allProjects}>
-                    <Project projectTitle={'social network'}
+                    <Project projectTitle={'todo list'}
                              projectDescription={'To add TypeScript to an existing Create React App project, first install.'}
-                             projectPicture={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-TaN7ysIH-0SofvpIADO8pPsri4vMgS34bQ&usqp=CAU'}
+                             projectPicture={todoImage}
                     />
-                    <Project projectTitle={'counter'}
+                    <Project projectTitle={'social network'}
                              projectDescription={'CSS Modules let you use the same CSS class name'}
-                             projectPicture={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRINocYcjskU22Iv0WELThq7SuLKTj3Djbmgg&usqp=CAU'}
+                             projectPicture={socialNetImage}
                     />
+                    <Project projectTitle={'cards'}
+                             projectDescription={' let you use the same cards'}
+                             projectPicture={cardsImage}
+                    />
+                   <Project projectTitle={'counter'}
+                             projectDescription={' counter for use something'}
+                             projectPicture={counterImage}
+                    />
+
                 </div>
             </div>
         </div>
