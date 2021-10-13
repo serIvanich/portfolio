@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './Skills.module.css'
 import {Skill} from "./Skill";
+import {Title} from "../../common/component/Title";
 
 
 export const Skills = () => {
@@ -8,7 +9,7 @@ export const Skills = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={s.skillsContainer}>
-                <h2>Skills</h2>
+                <Title title={'Skills'}/>
                 <div className={s.allSkills}>
                     <Skill title={'Javascript'}
                            description={'To add TypeScript to an existing Create React App project, first install.'}/>

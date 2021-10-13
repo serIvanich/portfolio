@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './Projects.module.css'
 import {Project} from "./Project";
+import {Title} from "../../common/component/Title";
 
 
 export const Projects = () => {
@@ -8,7 +9,7 @@ export const Projects = () => {
     return (
         <div className={s.projectsBlock}>
             <div className={s.projectsContainer}>
-                <h2>Projects</h2>
+                <Title title={'Projects'}/>
                 <div className={s.allProjects}>
                     <Project projectTitle={'social network'}
                              projectDescription={'To add TypeScript to an existing Create React App project, first install.'}
