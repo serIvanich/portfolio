@@ -9,7 +9,18 @@ import counterImage from './../../assets/image/counter-image.jpg'
 
 
 export const Projects = () => {
-
+const social = {
+    backgroundImage: `url(${socialNetImage}`
+}
+const todoList = {
+    backgroundImage: `url(${todoImage}`
+}
+const cards = {
+    backgroundImage: `url(${cardsImage}`
+}
+const counter = {
+    backgroundImage: `url(${counterImage}`
+}
     return (
         <div className={s.projectsBlock}>
             <div className={s.projectsContainer}>
@@ -17,19 +28,19 @@ export const Projects = () => {
                 <div className={s.allProjects}>
                     <Project projectTitle={'todo list'}
                              projectDescription={'To add TypeScript to an existing Create React App project, first install.'}
-                             projectPicture={todoImage}
+                             style={todoList}
                     />
                     <Project projectTitle={'social network'}
                              projectDescription={'CSS Modules let you use the same CSS class name'}
-                             projectPicture={socialNetImage}
+                             style={social}
                     />
                     <Project projectTitle={'cards'}
                              projectDescription={' let you use the same cards'}
-                             projectPicture={cardsImage}
+                             style={cards}
                     />
                    <Project projectTitle={'counter'}
                              projectDescription={' counter for use something'}
-                             projectPicture={counterImage}
+                            style={counter}
                     />
 
                 </div>
