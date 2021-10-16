@@ -10,19 +10,19 @@ import counterImage from './../../assets/image/counter-image.jpg'
 
 export const Projects = () => {
 const social = {
-    backgroundImage: `url(${socialNetImage}`,
+    backgroundImage: `url(${socialNetImage})`,
     backgroundSize: 'cover',
 }
 const todoList = {
-    backgroundImage: `url(${todoImage}`,
+    backgroundImage: `url(${todoImage})`,
     backgroundSize: 'cover',
 }
 const cards = {
-    backgroundImage: `url(${cardsImage}`,
+    backgroundImage: `url(${cardsImage})`,
     backgroundSize: 'cover',
 }
 const counter = {
-    backgroundImage: `url(${counterImage}`,
+    backgroundImage: `url(${counterImage})`,
     backgroundSize: 'cover',
 }
     return (
