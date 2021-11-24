@@ -7,11 +7,11 @@
     color: ghostwhite;
     border: 1px solid;
     border-radius: 2px;
+    .navContainer a {
+        text-decoration: none;
+        color: ghostwhite;
+    }
 
 
 }
 
-.navContainer a {
-    text-decoration: none;
-    color: ghostwhite;
-}

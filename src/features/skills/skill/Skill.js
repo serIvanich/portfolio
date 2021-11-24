@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './Skills.module.css'
+import s from './Skill.module.scss'
 
 export const Skill = ({title, description}) => {
 

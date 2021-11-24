@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './Projects.module.css'
+import s from './Project.module.scss'
 
 export const Project = ({projectTitle, projectDescription, projectPicture, style}) => {
 

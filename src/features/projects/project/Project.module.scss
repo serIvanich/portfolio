@@ -1,0 +1,37 @@
+
+
+.project {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 5vh;
+    border: 2px solid orange;
+    border-radius: 3px;
+    background-color: burlywood;
+    color: azure;
+    .projectPictureBlock {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        border-radius: 3px;
+        background-color: cadetblue;
+        .projectLink {
+            position: absolute;
+            left: 100px;
+            top: 90px;
+            width: 100px;
+            background-color: crimson;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            opacity: .5;
+        }
+    }
+    .projectDescription {
+        text-align: center;
+        background-color: grey;
+    }
+}
+
+

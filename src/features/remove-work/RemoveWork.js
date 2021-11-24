@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './RemoveWork.module.css'
+import s from './RemoveWork.module.scss'
 
 
 export const RemoveWork = () => {
