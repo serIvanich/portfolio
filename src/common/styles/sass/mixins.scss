@@ -1,0 +1,8 @@
+@import './variables';
+
+@mixin text($fontFamily, $fontSize) {
+  font-family: $fontFamily; //'Arial', 'sans-serif'
+  font-size: $fontSize;  //16px;
+  line-height: 1.2;
+  color: $textColor;
+}
