@@ -22,14 +22,16 @@
       border-radius: 3px;
       background-color: ghostwhite;
     }
-
+.photo{
+  width: 0px;
+}
     .photo {
       width: 200px;
       height: 250px;
       margin-top: 5vh;
       border: 1px solid;
       border-radius: 3px;
-
+transition: width 3s;
     }
 
   }
