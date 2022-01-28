@@ -9,6 +9,8 @@ import {Footer} from "./features/footer/Footer";
 
 
 function App() {
+
+    
     return (
         <div className="App">
             <Header/>
@@ -20,7 +22,7 @@ function App() {
             <Footer/>
 
         
-            
+           
         </div>
     );
 }

@@ -3,7 +3,10 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import s from './Nav.module.scss'
 
 export const Nav = () => {
-
+   const scrollToTop = () => {
+       debugger
+        scroll.scrollToTop();
+    };
     return (
         <div className={s.navContainer}>
         
@@ -39,7 +42,10 @@ export const Nav = () => {
     
             duration={3000}
             >Contacts</Link>
+
+<div className={s.scrollToUp} onClick={scrollToTop}>^</div>
             
         </div>
+        
     )
 }

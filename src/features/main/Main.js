@@ -15,7 +15,7 @@ const photo = {
                 <div className={s.info}>
                     <span>Hello people!</span>
                     <div>My name is <b>Serhii</b> and i am a FrontEnd Developer</div>
-                    <p>I have studied every day for that</p>
+                    <p>I studied more informations every day .</p>
                 </div>
                 <div className={s.photo} style={photo}>
 
