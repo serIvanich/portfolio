@@ -7,7 +7,7 @@ import {Title} from "../../common/component/Title";
 export const Skills = () => {
 
     return (
-        <div className={s.skillsBlock}>
+        <div className={s.skillsBlock} id={'skills'}>
             <div className={s.skillsContainer}>
                 <Title title={'Skills'}/>
                 <div className={s.allSkills}>

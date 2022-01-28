@@ -7,6 +7,7 @@ import {RemoveWork} from "./features/remove-work/RemoveWork";
 import {Contacts} from "./features/contacts/Contacts";
 import {Footer} from "./features/footer/Footer";
 
+
 function App() {
     return (
         <div className="App">
@@ -17,6 +18,9 @@ function App() {
             <RemoveWork/>
             <Contacts/>
             <Footer/>
+
+        
+            
         </div>
     );
 }

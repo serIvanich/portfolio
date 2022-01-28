@@ -26,7 +26,7 @@ const counter = {
     backgroundSize: 'cover',
 }
     return (
-        <div className={s.projectsBlock}>
+        <div className={s.projectsBlock}  id={'projects'}>
             <div className={s.projectsContainer}>
                 <Title title={'Projects'}/>
                 <div className={s.allProjects}>
