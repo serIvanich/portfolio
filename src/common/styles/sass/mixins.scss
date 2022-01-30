@@ -1,8 +1,15 @@
-@import './variables';
+@use './variables';
+@use 'sass.map';
 
 @mixin text($fontFamily, $fontSize) {
   font-family: $fontFamily; //'Arial', 'sans-serif'
   font-size: $fontSize;  //16px;
   line-height: 1.2;
   color: $textColor;
+}
+
+@mixin max-bp($breakpoint) {
+  @media (max-width: map.get($breakpoints, $breakpoint)) { 
+    @content
+  }
 }

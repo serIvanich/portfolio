@@ -10,7 +10,7 @@ const photo = {
 }
     return (
         <div className={s.mainBlock} id={'main'}> 
-            <div className={s.mainBackImg}>{'FrontEnd\nDeveloper'}</div>
+            
             <div className={s.mainContainer}>
                 <div className={s.info}>
                     <span>Hello people!</span>

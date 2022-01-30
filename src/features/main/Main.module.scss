@@ -6,22 +6,7 @@
   align-items: center;
   background-color: seashell;
 
-  .mainBackImg{
-    position: fixed;
-    top: 100px;
-    bottom: 0;
-    left: 0;
-    right: 0;  
-    color: rgba($color: #cec7c7, $alpha: 0.3);
-    text-shadow: 2px  3px rgba($color: #727070, $alpha: 0.3) ;
-    
-    
-    text-align: center;
-    font-size: 60px;
-    font-weight: 800;
-    z-index: 20;
-    }
-
+  
   .mainContainer {
     height: 100%;
     width: 80%;
@@ -57,3 +42,18 @@
   }
 }
 
+.mainBackImg{
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;  
+  color: rgba($color: #cec7c7, $alpha: 0.3);
+  text-shadow: 0  0 5px rgba($color: #727070, $alpha: 0.3) ;
+  
+  
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  z-index: 20;
+  }

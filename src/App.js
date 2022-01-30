@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import {Header} from "./features/header/Header";
 import {Skills} from "./features/skills/Skills";
 import {Main} from "./features/main/Main";
@@ -20,7 +20,7 @@ function App() {
             <RemoveWork/>
             <Contacts/>
             <Footer/>
-
+            
         
            
         </div>

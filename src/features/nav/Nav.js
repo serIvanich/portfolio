@@ -4,44 +4,52 @@ import s from './Nav.module.scss'
 
 export const Nav = () => {
    const scrollToTop = () => {
-       debugger
+       
         scroll.scrollToTop();
     };
     return (
         <div className={s.navContainer}>
         
             <Link
+              className={s.navLink}
               activeClass="active"
               to="main"
               spy={true}
               smooth={true}
     
-            duration={3000}
-            >Main</Link>
+              duration={3000}
+              >Main 
+            </Link>
             <Link
+              className={s.navLink}
               activeClass="active"
               to="skills"
               spy={true}
               smooth={true}
     
-            duration={3000}
-            >Skills</Link>
-             <Link
+              duration={3000}
+            >Skills
+            </Link>
+            <Link
+              className={s.navLink}
               activeClass="active"
               to="projects"
               spy={true}
               smooth={true}
     
-            duration={3000}
-            >Projects</Link>
-             <Link
+              duration={3000}
+            >Projects
+            </Link>
+            <Link
+              className={s.navLink}
               activeClass="active"
               to="contacts"
               spy={true}
               smooth={true}
     
-            duration={3000}
-            >Contacts</Link>
+              duration={3000}
+            >Contacts
+            </Link>
 
 <div className={s.scrollToUp} onClick={scrollToTop}>^</div>
             
