@@ -19,9 +19,19 @@
       font-size: 20px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      border-radius: 5px;
-      background-color:rgba($color:  darkgray, $alpha: 0.9);
+      
       cursor: pointer;
 
+      &:hover {
+          transform: rotateZ(360deg);
+          transition: all 0.5s ease 0s;
+          color: gold;
+        // background-color:rgba($color:  darkgray, $alpha: 0.9);
+      }
+
+    }
+    .active {
+        text-decoration: underline;
     }
     .scrollToUp{
         position: fixed;
