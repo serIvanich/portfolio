@@ -1,3 +1,5 @@
+@import '../../common/styles/sass/mixins.scss';
+
 
 .navContainer {
 
@@ -10,22 +12,35 @@
     
     border-radius: 2px;
 
+    @include max-bp('small') {
+
+      flex-direction: column;
+      align-items: end;
+    }
+      
+    
+
     .navLink {
         display: flex;
         justify-content: center;
         align-items: center;
       min-width: 110px;
       min-height: 40px;
-      font-size: 20px;
+      font-size: 23px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      border-radius: 5px;
       
       cursor: pointer;
 
+      @include max-bp('small') {
+
+        font-size: 30px;
+      }
+
       &:hover {
-          transform: rotateZ(360deg);
+          transform: rotateX(360deg);
           transition: all 0.5s ease 0s;
-          color: gold;
+         
         // background-color:rgba($color:  darkgray, $alpha: 0.9);
       }
 
@@ -33,6 +48,21 @@
     .active {
         text-decoration: underline;
     }
+   
+
+    @include max-bp('mini') {
+
+      color: seashell
+    }
+    
+  }
+
+  
+   
+   
+   
+   
+   
     .scrollToUp{
         position: fixed;
         bottom: 57px;
@@ -50,5 +80,5 @@
         z-index: 50;
     }
 
-}
+
 

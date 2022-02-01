@@ -7,7 +7,7 @@ import {Projects} from "./features/projects/Projects";
 import {RemoveWork} from "./features/remove-work/RemoveWork";
 import {Contacts} from "./features/contacts/Contacts";
 import {Footer} from "./features/footer/Footer";
-import { Link, animateScroll as scroll, scrollSpy } from "react-scroll";
+
 import { MobileHeader } from './features/header/MobileHeader';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       
     
     return (
-        <div className="App">
+        <div className="App" style={{}}>
             <MobileHeader/>
             <Header/>
             <Main/>

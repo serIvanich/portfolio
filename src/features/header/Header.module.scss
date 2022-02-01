@@ -1,33 +1,68 @@
 @import '../../common/styles/sass/mixins.scss';
 
-.container {
+.headerContainer {
     position:fixed;
     top:0;
     width: 100%;
     
-    z-index: 100;
-    height: 80px;
+    
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
     background-color:rgba($color:  darkgray, $alpha: 0.7);
-    
+    z-index: 100;
     transition: all 0.5s ease 0s;
 
     @include max-bp('small') {
-        
+       
             display: none;
+            
     }
 }
 .mobileHeaderContainer {
     display: none; 
 
     @include max-bp('small') {
-        
-        display: flex;
-}
-}
+       display: block;
+       position: fixed;
+       z-index: 100;
+
+     }
 
 
+.mobileNavMenu{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 33px;
+    display: block;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 120;
     
+    &:hover {
+box-shadow: 3px 3px 15px white;
+        opacity: 1;
+    }
+  }
+ 
+  .navbarMobileContainer{
+    
+
+    @include max-bp('small') {
+
+      position: fixed;
+      top: 0;
+      right: 0;
+     display: flex;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(72, 124, 122, 0.9);
+      z-index: 110;
+      
+      
+    }
+  }
+}

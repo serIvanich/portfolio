@@ -1,19 +1,21 @@
 import React from 'react'
-import { Link, animateScroll as scroll, scroller } from "react-scroll";
-import s from './Nav.module.scss'
+import { Link, animateScroll as scroll } from "react-scroll";
+import s from './NavBar.module.scss'
 
-export const Nav = () => {
+export const NavBar = ({closeMenu}) => {
     
   
   
-  
+  const onClickLink = () => {
+    closeMenu()
+  }
    const scrollToTop = () => {
        
         scroll.scrollToTop();
     };
     return (
       <>
-      <div className={s.scrollToUp} onClick={scrollToTop}>^</div>
+      
         <div className={s.navContainer} >
         
             <Link
@@ -22,7 +24,7 @@ export const Nav = () => {
               to="main"
               spy={true}
               smooth={true}
-    
+              onClick={onClickLink}
               duration={3000}
               >Main 
             </Link>
@@ -32,7 +34,7 @@ export const Nav = () => {
               to="skills"
               spy={true}
               smooth={true}
-    
+              onClick={onClickLink}
               duration={3000}
             >Skills
             </Link>
@@ -42,7 +44,7 @@ export const Nav = () => {
               to="projects"
               spy={true}
               smooth={true}
-    
+              onClick={onClickLink}
               duration={3000}
             >Projects
             </Link>
@@ -52,7 +54,7 @@ export const Nav = () => {
               to="contacts"
               spy={true}
               smooth={true}
-    
+              onClick={onClickLink}
               duration={3000}
             >Contacts
             </Link>
@@ -63,3 +65,5 @@ export const Nav = () => {
         </>
     )
 }
+
+{/* <div className={s.scrollToUp} onClick={scrollToTop}>^</div> */}

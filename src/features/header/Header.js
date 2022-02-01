@@ -1,15 +1,21 @@
 import React, {useCallback, useState, useEffect } from 'react'
 import s from './Header.module.scss'
-import {Nav} from "../nav/Nav";
+import {NavBar} from "../navbar/NavBar";
 
-export const Header = () => {
+export const Header = React.memo(() => {
     const [scroll, setScroll] = useState(0);
     const [letTransform, setLetTransform] = useState(false);
+
+    const styles = {
+        transform: letTransform ?'translateY(-180px)':'translateY(0px)',
+        
+       } 
+
     const onScroll = useCallback(() => setScroll((scroll) => {
         const newScroll = Math.round(window.scrollY)
-        if (newScroll > 80 && newScroll > scroll) {
+        if (newScroll > 500 && newScroll > scroll) {
             setLetTransform(true)
-        }else if (newScroll > 80 && newScroll < scroll){
+        }else if (newScroll > 500 && newScroll < scroll){
             setLetTransform(false)
         } 
         return newScroll
@@ -21,16 +27,15 @@ export const Header = () => {
         return () => window.removeEventListener("scroll", onScroll);
       }, [onScroll])
       
-       const styles = {
-        transform: letTransform ?'translateY(-80px)':'translateY(0px)',
-        transition: 'all 0.5s ease 0s',
-       } 
-    
+       
+    const closeMenu = () => {
+        setLetTransform(false)
+    }
       
       
     return (
-        <div className={s.container} style={styles}>
-            <Nav/>
+        <div className={s.headerContainer} style={styles}>
+            <NavBar closeMenu={closeMenu}/>
         </div>
     )
-}
+})

@@ -1,6 +1,6 @@
 
 .mainBlock {
-  position: relative;
+  
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -25,9 +25,7 @@
       border-radius: 3px;
       background-color: ghostwhite;
     }
-.photo{
-  width: 0px;
-}
+
     .photo {
       width: 200px;
       height: 350px;
@@ -44,10 +42,12 @@
 
 .mainBackImg{
   position: fixed;
+  
+  
+  
   top: 100px;
-  bottom: 0;
-  left: 0;
-  right: 0;  
+  
+
   color: rgba($color: #cec7c7, $alpha: 0.3);
   text-shadow: 0  0 5px rgba($color: #727070, $alpha: 0.3) ;
   

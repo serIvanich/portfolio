@@ -10,12 +10,12 @@ const photo = {
 }
     return (
         <div className={s.mainBlock} id={'main'}> 
-            
+            <div className={s.mainBackImg}>FrontEnd Developer</div>
             <div className={s.mainContainer}>
                 <div className={s.info}>
                     <span>Hello people!</span>
                     <div>My name is <b>Serhii</b> and i am a FrontEnd Developer</div>
-                    <p>I studied more informations every day .</p>
+                    <p>I want to improve my skills and learn new possibility of javascript.</p>
                 </div>
                 <div className={s.photo} style={photo}>
 
