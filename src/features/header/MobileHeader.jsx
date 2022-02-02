@@ -4,7 +4,7 @@ import s from './Header.module.scss'
 import {NavBar} from '../navbar/NavBar'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-export const MobileHeader = () => {
+export const MobileHeader = ({changeScroll}) => {
   const [letOpen, setLetOpen] = useState(false);
 
   const styles = {
@@ -15,12 +15,14 @@ export const MobileHeader = () => {
 
   const openMobileMenu = () => {
     setLetOpen(true)
+    changeScroll(false)
 
   }
 
   const closeMobileMenu = () => {
   
     setLetOpen(false)
+    changeScroll(true)
   }
 
   

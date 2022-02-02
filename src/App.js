@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './App.scss';
 import {Header} from "./features/header/Header";
 import {Skills} from "./features/skills/Skills";
@@ -11,13 +11,18 @@ import {Footer} from "./features/footer/Footer";
 import { MobileHeader } from './features/header/MobileHeader';
 
 function App() {
-    
+    const [onScroll, setOnScroll] = useState(true)
+
+    useEffect(() => {
+
+        document.body.style.overflow = onScroll ? 'auto' : 'hidden';
+    },[onScroll])
         
-      
+     
     
     return (
-        <div className="App" style={{}}>
-            <MobileHeader/>
+        <div className={`app `} style={{}}>
+            <MobileHeader changeScroll={setOnScroll}/>
             <Header/>
             <Main/>
             <Skills/>
