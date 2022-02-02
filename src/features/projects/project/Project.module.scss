@@ -1,15 +1,18 @@
-
+@import '../../../common/styles/sass/mixins.scss';
 
 .project {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto 5vh;
+    @include itemBlock(300px);
+    // width: 300px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // margin: 10px;
     border: 2px solid orange;
     border-radius: 3px;
     background-color: burlywood;
     color: azure;
+
+    
     .projectPictureBlock {
         position: relative;
         width: 100%;

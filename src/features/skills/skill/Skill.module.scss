@@ -1,11 +1,7 @@
-
+@import '../../../common/styles/sass/mixins.scss';
 
 .skill {
-    width: 250px;
-    margin: 1vh auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include itemBlock(250px);
 
     border-radius: 3px;
     background-color: burlywood;

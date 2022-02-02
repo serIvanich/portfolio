@@ -1,32 +1,39 @@
+@import '../../common/styles/sass/mixins.scss';
 
 .projectsBlock {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color: khaki;
+
+    @include templatePageBlock(khaki);
+    // min-height: 100vh;
+    // display: flex;
+    // align-items: center;
+    // background-color: khaki;
 }
 
 .projectsContainer {
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid;
-    border-radius: 3px;
+    @include templatePageContainer();
+    // height: 100%;
+    // width: 80%;
+    // margin: 0 auto;
+
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // border: 1px solid;
+    // border-radius: 3px;
 }
 
 
 .allProjects {
-    width: 100%;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include itemsBox();
+    // width: 100%;
+
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
 
 
 }

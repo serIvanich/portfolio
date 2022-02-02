@@ -1,41 +1,51 @@
+@import '../../common/styles/sass/mixins.scss';
+
 
 .contactsBlock {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background-color: rebeccapurple;
+
+  @include templatePageBlock(rebeccapurple);
+  // height: 100vh;
+  // display: flex;
+  // align-items: center;
+  // background-color: rebeccapurple;
   color: lavender;
 
   .contactsContainer {
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid;
-    border-radius: 3px;
+    @include templatePageContainer();
+    // height: 100%;
+    // width: 80%;
+    // margin: 0 auto;
+
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // border: 1px solid;
+    // border-radius: 3px;
 
     .contactsForm {
-      height: 350px;
-      width: 80%;
+      min-height: 350px;
+      // width: 80%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
       border-radius: 3px;
       background-color: indigo;
+
+     @include adaptabilityWidth(100%);
       .input {
         height: 50px;
-        width: 80%;
+       
         font-size: 20px;
+        @include adaptabilityWidth();
       }
       .textarea {
         height: 180px;
-        width: 80%;
+        
         font-size: 20px;
+        @include adaptabilityWidth();
       }
     }
     .contactsButton {

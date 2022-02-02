@@ -15,6 +15,10 @@
     z-index: 100;
     transition: all 0.5s ease 0s;
 
+    &:hover {
+      box-shadow: 0 13px 25px rgb(250, 250, 250);
+    }
+
     @include max-bp('small') {
        
             display: none;
@@ -43,8 +47,8 @@
     z-index: 120;
     
     &:hover {
-box-shadow: 3px 3px 15px white;
-        opacity: 1;
+      box-shadow: 3px 3px 15px white;
+      opacity: 1;
     }
   }
  

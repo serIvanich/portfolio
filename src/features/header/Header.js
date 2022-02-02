@@ -13,9 +13,9 @@ export const Header = React.memo(() => {
 
     const onScroll = useCallback(() => setScroll((scroll) => {
         const newScroll = Math.round(window.scrollY)
-        if (newScroll > 500 && newScroll > scroll) {
+        if (newScroll > 300 && newScroll > scroll) {
             setLetTransform(true)
-        }else if (newScroll > 500 && newScroll < scroll){
+        }else if (newScroll > 300 && newScroll < scroll){
             setLetTransform(false)
         } 
         return newScroll

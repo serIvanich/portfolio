@@ -19,7 +19,9 @@ export const Skills = () => {
                            description={'Global installs of create-react-app are no longer supported'}/>
                     <Skill title={'CSS'}
                            description={'CSS Modules let you use the same CSS class name'}/>
+               
                 </div>
+                
             </div>
         </div>
     )

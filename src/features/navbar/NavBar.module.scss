@@ -38,6 +38,7 @@
       }
 
       &:hover {
+        //text-shadow: 13px 13px 3px rgb(250, 250, 250), -13px -13px 3px rgb(250, 250, 250);
           transform: rotateX(360deg);
           transition: all 0.5s ease 0s;
          
@@ -47,6 +48,9 @@
     }
     .active {
         text-decoration: underline;
+        &:hover{
+          transform:none;
+        }
     }
    
 

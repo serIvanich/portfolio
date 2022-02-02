@@ -1,25 +1,16 @@
+@import '../../common/styles/sass/mixins.scss';
+
 
 .mainBlock {
   
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background-color: seashell;
 
+  @include templatePageBlock(seashell);
   
   .mainContainer {
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    
-    display: flex;
-    
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid;
+    // height: 100%;
+   
+    @include templatePageContainer(row);
 
-    
     .info {
       
       border-radius: 3px;
