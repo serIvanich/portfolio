@@ -15,47 +15,113 @@
     z-index: 100;
     transition: all 0.5s ease 0s;
 
+    &::after{
+      
+      content: 'My Portfolio';
+      position: fixed;
+      top: 3px;
+      left: 10px;
+      
+      width: 100%;
+      height: 100%;
+    
+     
+      font-size: 70px;
+      text-align: start;
+      font-weight: bolder;
+     
+      color: rgba(233, 233, 233, 0.3);
+      text-shadow: 5px 0 15px rgba(220, 243, 242, 0.3),
+       -5px 0 15px rgba(220, 243, 242, 0.3),
+       7px 0 15px rgba(220, 243, 242, 0.3),
+       -7px 0 15px rgba(220, 243, 242, 0.3) ;
+       transform: scaleX(100%);
+
+       @include max-bp('strech') {
+        top: 10px;
+        font-size: 57px;
+       }
+       @include max-bp('mini') {
+
+        font-size: 43px;
+       }
+    }
+
     &:hover {
       box-shadow: 0 13px 25px rgb(250, 250, 250);
     }
 
-    @include max-bp('small') {
+    @include max-bp('mini') {
        
-            display: none;
+      height: 150px;     
             
     }
-}
-.mobileHeaderContainer {
-    display: none; 
-
-    @include max-bp('small') {
-       display: block;
-       position: fixed;
-       z-index: 100;
-
-     }
 
 
 .mobileNavMenu{
+  display: none;
+
+  @include max-bp('small') {
+       
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     right: 20px;
     font-size: 33px;
     display: block;
     opacity: 0.5;
     cursor: pointer;
     z-index: 120;
-    border-radius: 45%;
+    color:azure; 
+    &:hover {
+      opacity: 1;
+    }  
+}
+}
+
+// .mobileHeaderContainer {
+//     display: none; 
+
+//     @include max-bp('small') {
+//        display: block;
+//        position: fixed;
+//        z-index: 100;
+
+//      }
+
+
+     
+
+// .mobileNavMenu{
+//     position: fixed;
+//     top: 20px;
+//     right: 20px;
+//     font-size: 33px;
+//     display: block;
+//     opacity: 0.5;
+//     cursor: pointer;
+//     z-index: 120;
+//     border-radius: 45%;
    
     
-    &:hover {
-      box-shadow: 3px 3px 15px white;
-      opacity: 1;
-    }
-  }
+//     &:hover {
+//       box-shadow: 3px 3px 15px white;
+//       opacity: 1;
+//     }
+//   }
  
+.navbarContainer {
+  width: 100%;
+display:flex;
+
+
+@include max-bp('small') {
+  display: none;
+}
+
+}
+
   .navbarMobileContainer{
-    
+    display:none;
 
     @include max-bp('small') {
 
@@ -63,9 +129,11 @@
       top: 0;
       right: 0;
      display: flex;
-      width: 100%;
+     
+     justify-content: flex-end;
+      width: 100vw;
       height: 100vh;
-      background-color: rgb(72, 124, 122, 0.7);
+      background-color: rgba(37, 85, 97, 0.8);
       z-index: 110;
       
       

@@ -22,8 +22,8 @@ function App() {
     
     return (
         <div className={`app `} style={{}}>
-            <MobileHeader changeScroll={setOnScroll}/>
-            <Header/>
+            {/* <MobileHeader changeScroll={setOnScroll}/> */}
+            <Header changeScroll={setOnScroll}/>
             <Main/>
             <Skills/>
             <Projects/>
