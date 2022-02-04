@@ -8,7 +8,7 @@ import {RemoveWork} from "./features/remove-work/RemoveWork";
 import {Contacts} from "./features/contacts/Contacts";
 import {Footer} from "./features/footer/Footer";
 
-import { MobileHeader } from './features/header/MobileHeader';
+
 
 function App() {
     const [onScroll, setOnScroll] = useState(true)

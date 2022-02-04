@@ -32,7 +32,7 @@
 //page block template 
 
 @mixin templatePageBlock($backColor, $minHeight:100vh) {
-
+  position: relative;
   min-height: $minHeight;
   display: flex;
   // align-items: center;
@@ -91,4 +91,27 @@
       width: 250px;
       margin: 10px 0;
   }
+}
+
+@mixin sideNamePage{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;  
+  display: flex;    
+  flex-flow: row nowrap;   
+  justify-content: center;
+  align-items: center;
+  width: calc((100vw - 27.875em) / 2);
+  min-width: 1.36em;
+  max-height: 100%;
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: 1;
+  color: #e9e9e9;
+  text-transform: uppercase;    
+  writing-mode: tb-rl;
+  text-align: center;
+  transform: rotate(180deg);
 }
