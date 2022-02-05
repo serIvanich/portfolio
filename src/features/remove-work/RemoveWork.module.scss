@@ -25,6 +25,7 @@
     .title {
       text-align: center;
       font-size: 33px;
+      
     }
 
     .linkOffRemoveWork {
@@ -40,6 +41,9 @@
     }
 
 
+  }
+  &:hover{
+    filter: invert(150%);
   }
 
 }
