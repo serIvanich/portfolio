@@ -9,7 +9,7 @@ export const Skills = () => {
 
     return (
         <div className={s.skillsBlock} id={'skills'}>
-             <div className={s.skillsSideImg}>my skills</div>
+             
             <div className={s.skillsContainer}>
                 <Title title={'Skills'}/>
                 <div className={s.allSkills}>

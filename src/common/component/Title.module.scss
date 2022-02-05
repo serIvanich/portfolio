@@ -1,0 +1,19 @@
+@import '../styles/sass/mixins.scss';
+
+.title {
+  @include sideNamePage();
+
+
+  @include max-bp('small') {
+    position: static;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+
+    &.titleMain{
+      position: static;
+      writing-mode: tb-rl;
+      transform: rotate(180deg);
+    }
+  };
+  
+}

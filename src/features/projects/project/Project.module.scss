@@ -1,7 +1,7 @@
 @import '../../../common/styles/sass/mixins.scss';
 
 .project {
-    @include itemBlock(300px);
+    @include itemBlock(300px, 350px);
     // width: 300px;
     // display: flex;
     // flex-direction: column;
@@ -29,6 +29,24 @@
             text-decoration: none;
             color: white;
             opacity: .5;
+        }
+    }
+
+    .descriptionTitle {
+position: relative;
+outline: none;
+z-index: 0;
+padding-bottom: 5px;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            background-color: beige;
+            z-index: -1;
+            text-decoration: underline;
         }
     }
     .projectDescription {

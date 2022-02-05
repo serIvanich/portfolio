@@ -36,7 +36,7 @@
   min-height: $minHeight;
   display: flex;
   // align-items: center;
-  background-color: $backColor;
+  background-color: $generalBackgroundColor;
 
   
 }
@@ -79,8 +79,8 @@
   padding-top: 10vh;
 }
 
-@mixin itemBlock($width) {
-  min-height: 300px;
+@mixin itemBlock($width, $minHeight: 300px) {
+  min-height: $minHeight;
     width: $width;
     margin: 10px ;
     display: flex;

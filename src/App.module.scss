@@ -1,0 +1,16 @@
+
+.app {
+
+
+  & :nth-child(even) {
+
+    //background-color: rgb(66, 49, 27);
+  }
+}
+
+
+
+.appNoScroll {
+
+  overflow: hidden;
+}

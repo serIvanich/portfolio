@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './Main.module.scss'
 import myPhoto from './../../assets/image/my-photo.jpg'
+import { Title } from '../../common/component/Title'
 
 
 export const Main = () => {
@@ -10,7 +11,7 @@ const photo = {
 }
     return (
         <div className={s.mainBlock} id={'main'}> 
-            <div className={s.mainBackImg}>FrontEnd Developer</div>
+           <Title title={'web developer'} />
             <div className={s.mainContainer}>
                 <div className={s.info}>
                     <span>Hello people!</span>
@@ -25,3 +26,4 @@ const photo = {
         </div>
     )
 }
+//  <div className={s.mainBackImg}>FrontEnd Developer</div>
