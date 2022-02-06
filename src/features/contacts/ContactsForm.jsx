@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import s from './ContactsForm.module.scss'
+import { projectApi } from '../../api/projectApi';
  
 
  export const ContactsForm = () => {
@@ -29,9 +30,9 @@ import s from './ContactsForm.module.scss'
         return errors;
     },
 
-    onSubmit: (values) => {
-       console.log(values);
-
+    onSubmit: async(values) => {
+       //console.log(values);
+       await projectApi.sendMessage(values)
         //formik.resetForm()
     },
 });
