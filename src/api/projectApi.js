@@ -4,7 +4,7 @@ export const projectApi = {
 
   sendMessage(data) {
     // console.log(data)
-    return axios.post('http://https://smpt-nodejs-gmail.herokuapp.com/sendMessage', {...data})
+    return axios.post('https://smpt-nodejs-gmail.herokuapp.com/sendMessage', {...data})
     .then(res => res.data)
   
   },
