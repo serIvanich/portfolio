@@ -4,8 +4,35 @@ import s from './ContactsForm.module.scss'
 import { projectApi } from '../../api/projectApi';
  
 
- export const ContactsForm = () => {
+export const ContactsForm = () => {
    
+  const formValidate = (values) => {
+      
+    const errors = {};
+    if (!values.name) {
+        errors.name = 'Required';
+    } else if (!/^\w+$/ig.test(values.name)) {
+        errors.name = 'name can have only a letter or number or _';
+    } else if (values.name.length > 10) {
+        errors.name = 'Length of the name cannot be more 10'
+    } 
+    if (!values.email) {
+        errors.email = 'Required';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+        errors.email = 'Invalid email.';
+    }
+    if (values.phone && !/^\d{11}$/ig.test(values.phone)) {
+        errors.phone = 'Phone number can be 11 numbers'
+    } 
+    if (values.message.length > 500) {
+        errors.message = 'Message can be only a less thah 500 characters'
+    }
+
+    return errors;
+}
+
+
+
   
   const formik = useFormik({
     initialValues: {
@@ -14,21 +41,7 @@ import { projectApi } from '../../api/projectApi';
         phone: '',
         message: '',
     },
-    validate: (values) => {
-        const errors = {};
-        if (!values.name) {
-            errors.name = 'Required';
-        } else if (/(^[A-F0-9]{*}$)/i.test(values.name)) {
-            errors.name = 'Invalid name';
-        }
-        if (!values.email) {
-            errors.email = 'Required';
-        } else if (/(^[A-F0-9]{*}$)/i.test(values.email)) {
-            errors.email = 'Invalid email';
-        }
-
-        return errors;
-    },
+    validate: formValidate,
 
     onSubmit: async(values) => {
        //console.log(values);
