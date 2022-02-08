@@ -4,13 +4,13 @@ import {Title} from "../../common/component/Title";
 import { ContactsForm } from './ContactsForm';
 
 
-export const Contacts = () => {
+export const Contacts = (props) => {
 
     return (
         <div className={s.contactsBlock}  id={'contacts'}>
             <div className={s.contactsContainer}>
                 <Title title={'Contacts'} />
-                <ContactsForm />
+                <ContactsForm {...props} />
             </div>
         </div>
     )

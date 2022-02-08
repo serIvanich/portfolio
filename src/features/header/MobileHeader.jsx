@@ -20,7 +20,7 @@ export const MobileHeader = ({changeScroll}) => {
   }
 
   const closeMobileMenu = () => {
-  
+  debugger
     setLetOpen(false)
     changeScroll(true)
   }

@@ -1,11 +1,13 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import s from './ContactsForm.module.scss'
-import { projectApi } from '../../api/projectApi';
+
  
 
-export const ContactsForm = () => {
-   
+export const ContactsForm = ({disabled, submitForm}) => {
+  
+    
+
   const formValidate = (values) => {
       
     const errors = {};
@@ -43,11 +45,12 @@ export const ContactsForm = () => {
     },
     validate: formValidate,
 
-    onSubmit: async(values) => {
-       //console.log(values);
-       await projectApi.sendMessage(values)
-        //formik.resetForm()
-    },
+    onSubmit:submitForm,
+    //  async(values) => {
+    //    //console.log(values);
+    //    await projectApi.sendMessage(values)
+    //     //formik.resetForm()
+    // },
 });
 
 return (
@@ -83,7 +86,7 @@ return (
             {formik.touched.message && formik.errors.message && formik.errors.message}
         </div>
 
-        <button type="submit">add gradient</button>
+        <button type="submit" disabled={disabled}>add gradient</button>
     </form>
 )
 }

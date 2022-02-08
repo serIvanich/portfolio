@@ -9,11 +9,11 @@ export const Header = React.memo(({changeScroll}) => {
     const [scroll, setScroll] = useState(0);
     const [showHeader, setShowHeader] = useState(false);
     const [showMobileNavbar, setShowMobileNavbar] = useState(false);
-
+// show mobile navbar
   const stylesMobileNavbar = {
-    transform: showMobileNavbar ?'translateX(0)':'translateX(100%)',
-    
+    transform: showMobileNavbar ?'translateX(0)':'translateX(100%)', 
    } 
+// show general heder   
    const styles = {
     transform: showHeader ?'translateY(-180px)':'translateY(0px)',
     
@@ -53,7 +53,7 @@ export const Header = React.memo(({changeScroll}) => {
       }
     
       const closeMobileMenu = () => {
-      
+     
         setShowMobileNavbar(false)
         changeScroll(true)
       }
