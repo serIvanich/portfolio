@@ -42,13 +42,22 @@ export const sendMessage = async (data, dispatch) => {
     dispatch(actions.setOnScroll(false))
     let res = await projectApi.sendMessage(data)
     console.log(res)
-
+    if (res === 'ok') {
+    dispatch(actions.setStatus('gmail-success'))
+    } else {
+      dispatch(actions.setError('network wrong'))
+      dispatch(actions.setStatus('gmail-error'))
+    }
   } catch (e) {
     console.log(e)
-
-  }finally {
-    dispatch(actions.setStatus('success'))
-    dispatch(actions.setOnScroll(true))
+    dispatch(actions.setError(e))
+    dispatch(actions.setStatus('gmail-error'))
+    
   }
 
 }
+
+// finally {
+//   dispatch(actions.setStatus('success'))
+//   dispatch(actions.setOnScroll(true))
+// }

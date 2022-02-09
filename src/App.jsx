@@ -9,32 +9,46 @@ import {Contacts} from "./features/contacts/Contacts";
 import {Footer} from "./features/footer/Footer";
 import { appReducer, actions, sendMessage } from './bll/app-reducer';
 import Preloader from './common/component/preloader/Preloader';
+import cn from 'classnames'
+import { ModalContainer } from './common/component/modal-view/ModalContainer';
 
 const appStatus = {
     idea: 'idea',
     success: 'success',
     loading: 'loading',
-    error: 'error',
+    gmailSuccess: 'gmail-success',
+    gmailError: 'gmail-error',
 }
 
-function App() {
+export const App = () => {
+
     const initialState = {
         status: appStatus.idea,
         onScroll: true,
         error: null
     }
     const [state, dispatch] = useReducer(appReducer, initialState)
-    // const [onScroll, setOnScroll] = useState(true)
-
    
+    const {status, onScroll} = state
+    const appLoading = status === appStatus.loading
+    const gmailSuccessMessage = `
+    You sent letter for me. Thank you and I will answer you necessary.`
+   const gmailErrorMessage = `
+   Sorry but something had wrong
+   Error: ${state.error? state.error: '????'}`
+   const showModal = !onScroll && (status === appStatus.loading 
+        || status === appStatus.gmailSuccess
+        || status === appStatus.gmailError)
    
     useEffect(() => {
-        if (!state.onScroll) {
+        if (!onScroll) {
+           
             document.body.style.overflow = 'hidden';
+            
         } else {
             document.body.style.overflowY = 'auto'
          }    
-    },[state.onScroll])
+    },[onScroll])
 
     const submitForm = (data) => {
         console.log('submit form')
@@ -45,11 +59,25 @@ function App() {
 
          dispatch(actions.setOnScroll(value))
      }
-    const appLoading = state.status === appStatus.loading
-    return (
-        <div className={s.app}>
+    
+    const closeModalContainer = () => {
+        dispatch(actions.setStatus('success'))
+        dispatch(actions.setOnScroll(true))
+    }
 
-            {appLoading && <Preloader />}
+    return (
+
+        <div className={cn(s.app, {[`${s.appNoScroll}`]: !onScroll})}>
+
+            {showModal && <ModalContainer> 
+                {status === appStatus.loading && <Preloader /> }
+                {status === appStatus.gmailSuccess && 
+                    <GmailPromise message={gmailSuccessMessage} closeModalContainer={closeModalContainer}/>}
+                {status === appStatus.gmailError && 
+                    <GmailPromise message={gmailErrorMessage} closeModalContainer={closeModalContainer}/>}
+                </ModalContainer>    
+
+            }
            
             <Header changeScroll={changeAppScroll}/>
             <Main/>
@@ -65,4 +93,19 @@ function App() {
     );
 }
 
-export default App;
+const GmailPromise = ({message, closeModalContainer}) => {
+
+    return (
+
+        <div className={s.modalBox}>
+            <div>
+            {message}
+            </div>
+           <div>
+               <button onClick={closeModalContainer}>CLICK FOR EXIT</button>
+            </div> 
+            
+        </div>
+    )
+}
+

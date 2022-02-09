@@ -1,5 +1,5 @@
 import React from 'react'
-import preload from '../../../assets/image/1486.gif'
+import preload from '../../../assets/image/preloader.gif'
 import s from './Preloader.module.scss'
 
 

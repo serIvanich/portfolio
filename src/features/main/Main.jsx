@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Main.module.scss'
 import myPhoto from './../../assets/image/my-photo.jpg'
-import { Title } from '../../common/component/Title'
+import { Title } from '../../common/component/Title/Title'
 
 
 export const Main = () => {

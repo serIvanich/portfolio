@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Contacts.module.scss'
-import {Title} from "../../common/component/Title";
+import {Title} from "../../common/component/Title/Title";
 import { ContactsForm } from './ContactsForm';
 
 

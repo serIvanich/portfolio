@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Skills.module.scss'
 import {Skill} from "./skill/Skill";
-import {Title} from "../../common/component/Title";
+import {Title} from "../../common/component/Title/Title";
 
 
 
