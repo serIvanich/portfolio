@@ -12,7 +12,8 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 3px;
-    background-color: indigo;
+    background-color: rgb(68, 68, 68);
+    box-shadow:0 0 18px 10px rgba($color: #dbdbdb, $alpha: 1.0);
 
   & label {
     margin-top: 20px;

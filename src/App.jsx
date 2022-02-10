@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useReducer} from 'react'
+import React, {useEffect, useReducer} from 'react'
 import s from './App.module.scss';
 import {Header} from "./features/header/Header";
 import {Skills} from "./features/skills/Skills";
@@ -9,7 +9,6 @@ import {Contacts} from "./features/contacts/Contacts";
 import {Footer} from "./features/footer/Footer";
 import { appReducer, actions, sendMessage } from './bll/app-reducer';
 import Preloader from './common/component/preloader/Preloader';
-import cn from 'classnames'
 import { ModalContainer } from './common/component/modal-view/ModalContainer';
 
 const appStatus = {
@@ -32,10 +31,10 @@ export const App = () => {
     const {status, onScroll} = state
     const appLoading = status === appStatus.loading
     const gmailSuccessMessage = `
-    You sent letter for me. Thank you and I will answer you necessary.`
+    You sent the letter for me, thank you! I will answer you necessary.`
    const gmailErrorMessage = `
-   Sorry but something had wrong
-   Error: ${state.error? state.error: '????'}`
+   Sorry, but something went wrong! 
+    ${state.error? state.error: '????'}`
    const showModal = !onScroll && (status === appStatus.loading 
         || status === appStatus.gmailSuccess
         || status === appStatus.gmailError)
@@ -67,7 +66,7 @@ export const App = () => {
 
     return (
 
-        <div className={cn(s.app, {[`${s.appNoScroll}`]: !onScroll})}>
+        <div className={s.app}>
 
             {showModal && <ModalContainer> 
                 {status === appStatus.loading && <Preloader /> }
@@ -102,7 +101,7 @@ const GmailPromise = ({message, closeModalContainer}) => {
             {message}
             </div>
            <div>
-               <button onClick={closeModalContainer}>CLICK FOR EXIT</button>
+               <button onClick={closeModalContainer}>CLICK TO CLOSE</button>
             </div> 
             
         </div>

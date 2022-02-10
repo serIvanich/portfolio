@@ -10,9 +10,15 @@
     transform: rotate(0deg);
 
     &.titleMain{
-      position: static;
+      transform-origin: bottom;
       writing-mode: tb-rl;
       transform: rotate(180deg);
+      
+    }
+
+    &::after{
+
+      content: ''
     }
   };
   

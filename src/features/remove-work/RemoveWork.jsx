@@ -7,7 +7,7 @@ export const RemoveWork = () => {
     return (
         <div className={s.removeWorkBlock}>
             <div className={s.removeWorkContainer}>
-                <h2 className={s.title}>considering options for remote work</h2>
+                <h2 className={s.title}>I am considering options for remote work</h2>
                 
                 <Link
                   className={s.linkOffRemoveWork}

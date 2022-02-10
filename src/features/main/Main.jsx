@@ -2,6 +2,7 @@ import React from 'react'
 import s from './Main.module.scss'
 import myPhoto from './../../assets/image/my-photo.jpg'
 import { Title } from '../../common/component/Title/Title'
+import RubberBand from 'react-reveal/RubberBand';
 
 
 export const Main = () => {
@@ -11,7 +12,7 @@ const photo = {
 }
     return (
         <div className={s.mainBlock} id={'main'}> 
-           <Title title={'web developer'} />
+           <RubberBand><Title title={'web developer'} /></RubberBand>
             <div className={s.mainContainer}>
                 <div className={s.info}>
                     <span>Hello people!</span>

@@ -23,8 +23,8 @@
       text-align: start;
       font-weight: bolder;
       color: rgba(233, 233, 233, 0.3);
-      text-shadow: 5px 0 5px rgba(177, 236, 169, 0.3),
-       -5px 0 5px rgba(177, 236, 169, 0.3) ;
+      text-shadow: 6px 0 7px rgba(177, 236, 169, 0.3),
+        -6px 0 5px rgba(177, 236, 169, 0.3) ;
        transform: scaleX(100%);
 
        @include max-bp('strech') {
