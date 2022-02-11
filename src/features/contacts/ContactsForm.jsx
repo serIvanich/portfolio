@@ -55,14 +55,14 @@ export const ContactsForm = ({disabled, submitForm}) => {
 
 return (
     <form  className={s.contactsFormContainer} onSubmit={formik.handleSubmit}>
-        <label htmlFor="name" >enter your name</label>
+        <label htmlFor="name" >enter your name *</label>
         <input
             placeholder={''}
             {...formik.getFieldProps('name')}  />
         <div style={{'color': 'red', 'height': '10px'}}>
             {formik.touched.name && formik.errors.name && formik.errors.name}
         </div>
-        <label htmlFor="email" >enter your email</label>
+        <label htmlFor="email" >enter your email *</label>
         <input
             placeholder={''}
             {...formik.getFieldProps('email')}  />

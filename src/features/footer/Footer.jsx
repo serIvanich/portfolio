@@ -11,10 +11,18 @@ export const Footer = () => {
             <div className={s.footerContainer}>
                 <h1 className={s.footerName}>My Name</h1>
                 <div className={s.footerNav}>
-                    <div className={s.link}></div>
-                    <div className={s.link}></div>
-                    <div className={s.link}></div>
-                    <div className={s.link}></div>
+                    <div className={s.link}>
+
+                    </div>
+                    <div className={s.link}>
+
+                    </div>
+                    <div className={s.link}>
+
+                    </div>
+                    <div className={s.link}>
+                        
+                    </div>
 
                 </div>
                 <span className={s.footerEnd}>@2021 All rights reserved</span>

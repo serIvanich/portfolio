@@ -22,7 +22,8 @@
     .info {
       
       border-radius: 3px;
-      background-color: ghostwhite;
+      color: aliceblue;
+      // background-color: ghostwhite;
 
       @include max-bp('small') {
         margin-right: 10px;

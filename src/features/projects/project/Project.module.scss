@@ -17,7 +17,7 @@
     .projectPictureBlock {
         position: relative;
         width: 100%;
-        height: 200px;
+        height: 210px;
         border-radius: 3px;
         background-color: cadetblue;
         .projectLink {
@@ -38,6 +38,8 @@
         outline: none;
         z-index: 0;
         padding-bottom: 5px;
+        cursor: pointer;
+
         &::after {
             position: absolute;
             content: '';

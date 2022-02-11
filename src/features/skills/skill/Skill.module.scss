@@ -1,12 +1,15 @@
 @import '../../../common/styles/sass/mixins.scss';
 
 .skill {
-    @include itemBlock(250px);
+    @include itemBlock(250px, 250px);
+
 
     border-radius: 3px;
     background-color: rgb(51, 51, 51);
     color: azure;
     padding: 10px;
+    box-shadow: 0 0 8px 5px;
+
     .icon {
         width: 60px;
         height: 60px;
