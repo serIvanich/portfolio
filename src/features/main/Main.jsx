@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Main.module.scss'
-import myPhoto from './../../assets/image/my-photo.jpg'
+import myPhoto from './../../assets/image/my-photo2.jpg'
 import { Title } from '../../common/component/Title/Title'
 import RubberBand from 'react-reveal/RubberBand';
 
@@ -15,8 +15,9 @@ const photo = {
            <RubberBand><Title title={'web developer'} /></RubberBand>
             <div className={s.mainContainer}>
                 <div className={s.info}>
-                <p style={{color:'grey'}}><b>SORRY!But My Portfolio is in progress yet</b>
-                                            <p>I am working for that)) And I think it’ll be over soon))</p><hr/></p>
+                <b>SORRY!But My Portfolio is not in progress yet</b>
+                                            <p>I am working for that)) And I think it’ll be over soon))</p>
+                                            <hr/>
                     <span>Hello people!</span>
                     <div>My name is <b>Serhii</b> and i am a FrontEnd Developer</div>
                     <p>I want to improve my skills and learn new possibility of javascript.</p>
