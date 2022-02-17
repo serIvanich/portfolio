@@ -2,10 +2,25 @@ import React from 'react'
 import s from './Skills.module.scss'
 import {Skill} from "./skill/Skill";
 import {Title} from "../../common/component/Title/Title";
-
-
+import jsImg from '../../assets/image/js_logo.png'
+import htmlImg from '../../assets/image/html_logo.png'
+import cssImg from '../../assets/image/css_logo.png'
+import reactImg from '../../assets/image/react-logo.png'
+import reactReduxImg from '../../assets/image/react-redux-logo.png'
 
 export const Skills = () => {
+    const logoJS = {
+        backgroundImage: `url(${jsImg})`,
+        backgroundSize: '100px 100px',
+    }
+    const logoHTML = {
+        backgroundImage: `url(${htmlImg})`,
+        backgroundSize: 'cover',
+    }
+    const logoCSS = {
+        backgroundImage: `url(${cssImg})`,
+        backgroundSize: 'auto',
+    }
 
     return (
         <div className={s.skillsBlock} id={'skills'}>
@@ -13,12 +28,18 @@ export const Skills = () => {
             <div className={s.skillsContainer}>
                 <Title title={'Skills'}/>
                 <div className={s.allSkills}>
-                    <Skill title={'Javascript'}
-                           description={'To add TypeScript to an existing Create React App project, first install.'}/>
-                    <Skill title={'HTML'}
-                           description={'Global installs of create-react-app are no longer supported'}/>
-                    <Skill title={'CSS'}
-                           description={'CSS Modules let you use the same CSS class name'}/>
+                    <Skill logo={jsImg} title={'Javascript'}
+                        description={'To add TypeScript to an existing Create React App project, first install.'}/>
+                    <Skill logo={htmlImg} title={'HTML'}
+                        description={'Global installs of create-react-app are no longer supported'}/>
+                    <Skill logo={cssImg} title={'CSS'}
+                        description={'CSS Modules let you use the same CSS class name'}/>
+                    <Skill logo={reactImg} title={'REACT'}
+                        description={`React is an Open Source library created and maintained by Facebook.
+                         It's a great tool to render the User Interface (UI) of modern web applications.
+                        `}/>
+                    <Skill logo={reactReduxImg} title={'REACT-REDUX'}
+                        description={'The Redux Toolkit package is intended to be the standard way to write Redux logic.'}/>
                
                 </div>
                 

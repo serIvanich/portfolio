@@ -4,12 +4,12 @@ import cnBind from 'classnames/bind'
 
 const cx = cnBind.bind(s)
 
-export const Title = (props) => {
-    const mainTitle = props.title==='web developer'
+export const Title = ({title}) => {
+    const mainTitle = title==='web developer'
     const className = cx('title',{titleMain: mainTitle })
     return (
         
-            <h2 className={className}>{props.title}</h2>
+            <h2 className={className}>{title}</h2>
         
         
     )

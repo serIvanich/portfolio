@@ -15,9 +15,10 @@ const photo = {
            <RubberBand><Title title={'web developer'} /></RubberBand>
             <div className={s.mainContainer}>
                 <div className={s.info}>
-                <b>SORRY!But My Portfolio is not in progress yet</b>
-                                            <p>I am working for that)) And I think it’ll be over soon))</p>
-                                            <hr/>
+                    <div style={{color: 'grey'}}><b>SORRY!But My Portfolio isn't ready yet</b>
+                        <p>I am working for that)) And I think it’ll be over soon))</p>
+                        <hr/>
+                    </div>
                     <span>Hello people!</span>
                     <div>My name is <b>Serhii</b> and i am a FrontEnd Developer</div>
                     <p>I want to improve my skills and learn new possibility of javascript.</p>
