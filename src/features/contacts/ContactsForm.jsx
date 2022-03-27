@@ -78,7 +78,7 @@ return (
             {formik.touched.phone && formik.errors.phone && formik.errors.phone}
         </div>
 
-        <label htmlFor="message" >write message</label>
+        <label htmlFor="message">write your text</label>
         <textarea
             placeholder={''}
             {...formik.getFieldProps('message')}  />
@@ -86,7 +86,7 @@ return (
             {formik.touched.message && formik.errors.message && formik.errors.message}
         </div>
 
-        <button type="submit" disabled={disabled}>add gradient</button>
+        <button type="submit" disabled={disabled}>send message</button>
     </form>
 )
 }
