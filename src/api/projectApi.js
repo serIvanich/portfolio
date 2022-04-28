@@ -1,4 +1,4 @@
-import axios from "axios"
+import axios from 'axios'
 
 export const projectApi = {
 
@@ -10,7 +10,7 @@ export const projectApi = {
   },
 }
 //url heroku
-//http://https://smpt-nodejs-gmail.herokuapp.com/sendMessage
+//https://smpt-nodejs-gmail.herokuapp.com/sendMessage
 
-
+//url local
 // http://localhost:3010/sendMessage
