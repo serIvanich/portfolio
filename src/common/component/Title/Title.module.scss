@@ -3,7 +3,6 @@
 .title {
   @include sideNamePage();
 
-
   @include max-bp('small') {
     position: static;
     writing-mode: horizontal-tb;
@@ -13,10 +12,7 @@
       transform-origin: bottom;
       writing-mode: tb-rl;
       transform: rotate(180deg);
-      
     }
-
-  
   };
 
   text-shadow: 5px 5px  5px rgb(124, 124, 124)

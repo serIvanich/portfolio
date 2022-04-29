@@ -1,3 +1,4 @@
+@import '../../styles/sass/variables.scss';
 
 .modalContainer {
 
@@ -9,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(rgb(45, 53, 53), 0.6);
+  background-color: rgba($generalBackgroundColor, 0.6);
   z-index: 499;
 
 }

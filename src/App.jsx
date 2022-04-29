@@ -85,9 +85,7 @@ export const App = () => {
             <RemoveWork/>
             <Contacts submitForm={submitForm} disabled={appLoading}/>
             <Footer/>
-            
-        
-           
+                    
         </div>
     );
 }
@@ -98,10 +96,10 @@ const GmailPromise = ({message, closeModalContainer}) => {
 
         <div className={s.modalBox}>
             <div>
-            {message}
+                {message}
             </div>
-           <div>
-               <button onClick={closeModalContainer}>CLICK TO CLOSE</button>
+            <div>
+                <button onClick={closeModalContainer}>CLICK TO CLOSE</button>
             </div> 
             
         </div>

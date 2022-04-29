@@ -15,13 +15,3 @@ export const Contacts = (props) => {
         </div>
     )
 }
-
-
-{/* <form className={s.contactsForm}>
-                    <input className={s.input} alt={'name'}/>
-                    <input className={s.input}/>
-                    <textarea className={s.textarea}/>
-
-
-                </form>
-                <button className={s.contactsButton}>SEND</button> */}

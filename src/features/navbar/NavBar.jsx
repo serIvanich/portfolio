@@ -1,69 +1,42 @@
 import React from 'react'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 import s from './NavBar.module.scss'
 
 export const NavBar = ({closeMenu}) => {
     
-  
-  
-  const onClickLink = () => {
-    closeMenu()
-  }
-   const scrollToTop = () => {
-       
-        scroll.scrollToTop();
-    };
+    const onClickLink = () => {
+      closeMenu()
+    }
+    
     return (
-      <>
-      
-        <div className={s.navContainer} >
-        
-            <Link
-              className={s.navLink}
-              activeClass={s.active}
-              to="main"
-              spy={true}
-              smooth={true}
-              onClick={onClickLink}
-              duration={3000}
-              >Main 
-            </Link>
-            <Link
-              className={s.navLink}
-              activeClass={s.active}
-              to="skills"
-              spy={true}
-              smooth={true}
-              onClick={onClickLink}
-              duration={3000}
-            >Skills
-            </Link>
-            <Link
-              className={s.navLink}
-              activeClass={s.active}
-              to="projects"
-              spy={true}
-              smooth={true}
-              onClick={onClickLink}
-              duration={3000}
-            >Projects
-            </Link>
-            <Link
-              className={s.navLink}
-              activeClass={s.active}
-              to="contacts"
-              spy={true}
-              smooth={true}
-              onClick={onClickLink}
-              duration={3000}
-            >Contacts
-            </Link>
+        <>
+            <div className={s.navContainer} >
 
+                <GeneralLink link='main' onClickLink={onClickLink} />
+                <GeneralLink link='skills' onClickLink={onClickLink} />
+                <GeneralLink link='projects' onClickLink={onClickLink} />
+                <GeneralLink link='contacts' onClickLink={onClickLink} />
 
-            
         </div>
         </>
     )
 }
 
-{/* <div className={s.scrollToUp} onClick={scrollToTop}>^</div> */}
+const GeneralLink = ({link, onClickLink}) => {
+    const title = `${link.slice(0,1).toUpperCase()}${link.slice(1,)}` 
+    return (
+        <>
+            <Link
+                className={s.navLink}
+                activeClass={s.active}
+                to={link}
+                spy={true}
+                smooth={true}
+                onClick={onClickLink}
+                duration={3000}
+            >{title}
+            </Link>
+        </>
+  )
+}
+

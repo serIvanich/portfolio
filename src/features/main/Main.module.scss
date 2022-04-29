@@ -3,13 +3,9 @@
 
 .mainBlock {
   
+  @include templatePageBlock();
 
-  @include templatePageBlock(seashell);
-
-  
-  
   .mainContainer {
-    // height: 100%;
    
     @include templatePageContainer(row);
 
@@ -23,29 +19,21 @@
       
       border-radius: 3px;
       color: aliceblue;
-      // background-color: ghostwhite;
-
+    
       @include max-bp('small') {
         margin-right: 10px;
         min-width: 200px;
       }
-
     }
 
     .photo {
       width: 230px;
-      height: 350px;
-      
-      
+      height: 350px; 
       border-radius: 0 30px 30px 0;
       transition: width 2s;
       opacity: 0.97;
       z-index: 30;
     }
-
   }
-  
-  
-  
 }
 

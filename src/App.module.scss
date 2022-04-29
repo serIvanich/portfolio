@@ -1,14 +1,11 @@
 @import './common/styles/sass/mixins.scss';
+@import './common/styles/sass/variables.scss';
 
 .app {
-
-
   &>:nth-child(even) {
-    background-color: #2b2b2b;
+    background-color: $evenBackgroundColor;
   }
 }
-
-
 
 .modalBox {
   width: 300px;

@@ -6,9 +6,7 @@ import s from './ContactsForm.module.scss'
 
 export const ContactsForm = ({disabled, submitForm}) => {
   
-    
-
-  const formValidate = (values) => {
+    const formValidate = (values) => {
       
     const errors = {};
     if (!values.name) {
@@ -31,26 +29,17 @@ export const ContactsForm = ({disabled, submitForm}) => {
     }
 
     return errors;
-}
+    }
 
-
-
-  
-  const formik = useFormik({
-    initialValues: {
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
+    const formik = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            phone: '',
+            message: '',
     },
     validate: formValidate,
-
     onSubmit:submitForm,
-    //  async(values) => {
-    //    //console.log(values);
-    //    await projectApi.sendMessage(values)
-    //     //formik.resetForm()
-    // },
 });
 
 return (
@@ -90,6 +79,3 @@ return (
     </form>
 )
 }
-
-       
- 

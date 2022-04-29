@@ -10,8 +10,7 @@ export const Title = ({title}) => {
     return (
         
             <h2 className={className}>{title}</h2>
-        
-        
+    
     )
 
 }

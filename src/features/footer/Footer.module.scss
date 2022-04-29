@@ -1,23 +1,12 @@
 @import '../../common/styles/sass/mixins.scss';
 
 .footerBlock {
-@include templatePageBlock(lightgrey, $minHeight:40vh);
-    // min-height: 60vh;
-    // display: flex;
-    // align-items: center;
-    // background-color: lightgrey;
+@include templatePageBlock($minHeight:40vh);
+   
     color: darkolivegreen;
     .footerContainer {
+
         @include templatePageContainer();
-        // height: 100%;
-        // width: 80%;
-        // margin: 0 auto;
-        // padding: 3vh 0;
-        // display: flex;
-        // align-items: center;
-        // flex-direction: column;
-        // flex-wrap: wrap;
-        // justify-content: space-between;
 
         .infoBlock{
             width: 400px;
@@ -30,7 +19,6 @@
                
                 display: flex;
                 padding: 0.5em 0;
-                // background-color: aquamarine;
 
                 @include max-bp('mini') {
 

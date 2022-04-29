@@ -1,6 +1,5 @@
 import React, {useCallback, useState, useEffect } from 'react'
 import s from './Header.module.scss'
-
 import {NavBar} from "../navbar/NavBar";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
@@ -19,11 +18,6 @@ export const Header = React.memo(({changeScroll}) => {
     
    } 
 
-
-  
-
-   
-
     const onScroll = useCallback(() => setScroll((scroll) => {
         const newScroll = Math.round(window.scrollY)
         if (newScroll > 300 && newScroll > scroll) {
@@ -36,7 +30,6 @@ export const Header = React.memo(({changeScroll}) => {
      
     useEffect(() => {
         onScroll();
-        
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
       }, [onScroll])
@@ -78,7 +71,6 @@ const MobileNavMenu = ({showMobileNavbar, closeMobileMenu, openMobileMenu}) => {
                 {showMobileNavbar 
                   ?<AiOutlineClose onClick={closeMobileMenu}/>
                   :<AiOutlineMenu onClick={openMobileMenu}/>
-          
                 }
         </div>
     )

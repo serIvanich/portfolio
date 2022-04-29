@@ -33,7 +33,7 @@
 
     min-width: 110px;
     min-height: 40px;
-    font-size: 23px;
+    font-size: 1.8em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     cursor: pointer;
@@ -41,7 +41,7 @@
     @include max-bp('small') {
       margin-right: 20px;
       justify-content: flex-end;
-      font-size: 30px;
+      font-size: 2em;
 
       &:hover{
         transform: none !important;
@@ -55,7 +55,6 @@
       transform: scaleY(150%);
       transition: all 0.5s ease 0s;
 
-      // background-color:rgba($color:  darkgray, $alpha: 0.9);
     }
 
 
@@ -64,11 +63,6 @@
 
   .active {
     transform: scaleY(150%);
-    // text-decoration: underline;
-
-    &:hover {
-      // transform: none;
-    }
   }
 
 
@@ -76,43 +70,17 @@
 
 }
 
-
-
-
-
-
-
-.scrollToUp {
-  position: fixed;
-  bottom: 57px;
-  right: 15px;
-  width: 33px;
-  height: 33px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid gray;
-  border-radius: 50%;
-
-
-  font-size: 35px;
-  z-index: 50;
-}
-
-
-// @include max-bp('small') {
-
-//   & ::before {
-//     content: '';
-//     position: fixed;
-//     top: 0;
-//     right: 0;
-//    display: flex;
-//     width: 100%;
-//     height: 100vh;
-//     background-color: rgb(72, 124, 122, 0.3);
-//     z-index: 110;
-//   }
-//   flex-direction: column;
-//   align-items: end;
+// .scrollToUp {
+//   position: fixed;
+//   bottom: 57px;
+//   right: 15px;
+//   width: 33px;
+//   height: 33px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border: 1px solid gray;
+//   border-radius: 50%;
+//   font-size: 2em;
+//   z-index: 50;
 // }

@@ -14,21 +14,15 @@ export const Footer = () => {
 
                 <div className={s.infoBlock}>
                     <h4 className={s.footerName}>Serhii Kachurin</h4>
-                    {/* <InfoRow title='name' value='Serhii' /> */}
                     <InfoRow title='tel' value='80664424348' />
                     <InfoRow title='email' value='serivan1108@gmail.com' />
                 </div>
                 
                 <div className={s.footerNav}>
-                    <div className={s.link}>
-                        <img src={gitImg} alt='git'/>
-                    </div>
-                    <div className={s.link}>
-                        <img src={telegramImg} alt='git'/>
-                    </div>
-                    <div className={s.link}>
-                        <img src={linkendinImg} alt='git'/>
-                    </div>
+
+                    <IconLink link={gitImg}/>
+                    <IconLink link={telegramImg}/>
+                    <IconLink link={linkendinImg}/>
                    
                 </div>
                 <span className={s.footerEnd}>@2021 All rights reserved</span>
@@ -46,3 +40,14 @@ const InfoRow = ({title, value}) => {
         </div>
     )
 }
+
+const IconLink = ({link}) => {
+
+    return (
+        <div className={s.link}>
+            <img src={link} alt='git'/>
+        </div>
+    )
+}
+
+

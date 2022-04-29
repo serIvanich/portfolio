@@ -6,10 +6,10 @@ import s from './Preloader.module.scss'
 const Preloader = () => {
   
     return (
-    <div className={s.preloaderContainer}>
+        <div className={s.preloaderContainer}>
 
             <img src={preload} alt={''}/>
 
-    </div> )
+        </div> )
 }
 export default Preloader

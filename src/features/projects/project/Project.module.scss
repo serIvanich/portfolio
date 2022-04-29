@@ -2,12 +2,7 @@
 
 .project {
     @include itemBlock(300px, 350px);
-    // width: 300px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // margin: 10px;
-    // border: 2px solid orange;
+    
     border-radius: 5px;
     box-shadow: 0 0 10px 2px white;
     background-color: rgb(54, 54, 54);
@@ -26,10 +21,25 @@
             top: 90px;
             width: 100px;
             background-color: crimson;
+            font-size: 1.3em;
             text-align: center;
             text-decoration: none;
             color: white;
             opacity: .5;
+            z-index: 11;
+        }
+
+        &:hover {
+            &::before {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                background-color: rgba($color: #000000, $alpha: 0.4);
+                z-index: 10;
+            }
         }
     }
 

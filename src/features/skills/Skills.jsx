@@ -9,19 +9,7 @@ import reactImg from '../../assets/image/react-logo.png'
 import reactReduxImg from '../../assets/image/react-redux-logo.png'
 
 export const Skills = () => {
-    const logoJS = {
-        backgroundImage: `url(${jsImg})`,
-        backgroundSize: '100px 100px',
-    }
-    const logoHTML = {
-        backgroundImage: `url(${htmlImg})`,
-        backgroundSize: 'cover',
-    }
-    const logoCSS = {
-        backgroundImage: `url(${cssImg})`,
-        backgroundSize: 'auto',
-    }
-
+    
     return (
         <div className={s.skillsBlock} id={'skills'}>
              
