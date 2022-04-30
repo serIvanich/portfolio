@@ -11,7 +11,7 @@
     .title {
       text-align: center;
       font-size: 33px;
-      color: #ffffff;
+      color: $textColor;
       
     }
 
@@ -25,9 +25,15 @@
       border-radius: 5px;
       background-color: powderblue;
       text-decoration: none;
-      box-shadow:0 0 18px 10px rgba($color: #dbdbdb, $alpha: 1.0);
+
+      //box-shadow:0 0 18px 10px rgba($color: #dbdbdb, $alpha: 1.0);
       cursor: pointer;
-      color: white;
+      color: $textColor;
+      @include shadowBox(2);
+
+      &:hover {
+        color: darken($textColor, 100%);
+      }
     }
 
 

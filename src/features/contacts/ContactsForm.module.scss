@@ -1,4 +1,5 @@
 @import '../../common/styles/sass/mixins.scss';
+@import '../../common/styles/sass/variables.scss';
 
 .contactsFormContainer {
     position:relative;
@@ -11,8 +12,11 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 3px;
-    background-color: rgb(68, 68, 68);
-    box-shadow:0 0 18px 10px rgba($color: #dbdbdb, $alpha: 1.0);
+    font-size: 1.2em;
+    
+    background-color: $secondBackgroundColor;
+    @include shadowBox(2);
+    //box-shadow:0 0 18px 10px rgba($color: lighten($generalBackgroundColor, 99%), $alpha: 1.0);
 
   & label {
     margin-top: 20px;
@@ -20,21 +24,27 @@
    @include adaptabilityWidth(100%);
     & input {
       height: 50px;
-      font-size: 20px;
+      font-size: 1.5em;
+      
       @include adaptabilityWidth();
     }
     & textarea {
       height: 150px;
-      font-size: 20px;
+      font-size: 1.8em;
       @include adaptabilityWidth();
     }
 
     button {
       position: absolute;
-      bottom: -90px;
+      bottom: -110px;
       padding: 15px 35px;
-      border-radius: 3px;
+      border-radius: 5px;
+      font-size: 1.5em;
       cursor: pointer;
+
+      &:hover {
+          @include shadowBox(1.3);
+      }
     }
   }
   

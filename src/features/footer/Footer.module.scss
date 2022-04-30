@@ -1,8 +1,9 @@
 @import '../../common/styles/sass/mixins.scss';
+@import '../../common/styles/sass/variables.scss';
 
 .footerBlock {
 @include templatePageBlock($minHeight:40vh);
-   
+    font-size: 1.1em;
     color: darkolivegreen;
     .footerContainer {
 
@@ -13,7 +14,7 @@
             margin-bottom: 0.2em;
             padding: 2em;
             border-radius: 0.3em;
-            background-color: rgb(152, 153, 152);
+            background-color: lighten($generalBackgroundColor, 50%);
 
             .infoRow {
                
@@ -44,27 +45,17 @@
         .footerNav {
 
             @include templatePageContainer(row);
-
-            // width: 80%;
-            // display: flex;
-            // flex-direction: row;
-            // flex-wrap: wrap;
-            // align-items: center;
-            // justify-content: space-around;
-
-            // border-radius: 3px;
             padding-top: 0;
             border-radius: 0.3em;
-            background-color: rgb(152, 153, 152);
+            background-color: lighten($generalBackgroundColor, 50%);;
 
              @include max-bp('mini') {
                  width: 100%;
              }
             .link {
-                // width: 77px;
-                // height: 77px;
-                margin: 3px;
-               // background-color: grey;
+               
+                margin: 0.2em;
+               
 
                 & img{
                     width: 77px;
@@ -74,11 +65,7 @@
             }
 
         }
-        .footerEnd {
-
-            font-size: 20px;
-        }
-
+        
     }
 }
 

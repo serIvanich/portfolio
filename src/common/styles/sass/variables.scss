@@ -3,11 +3,13 @@
 
 
 
-$textColor: #fff;
+
 $primaryColor: rgba(56, 56, 56, 0.667);
  
-$generalBackgroundColor: rgb(32, 32, 32);
-$evenBackgroundColor: #2b2b2b;
+$generalBackgroundColor: rgb(48, 49, 47);
+$evenBackgroundColor: lighten($generalBackgroundColor, 3%);
+$textColor: lighten($generalBackgroundColor, 95%);
+$secondBackgroundColor: lighten($generalBackgroundColor, 13%);
 
 $breakpoints: (
   strech: 1020px,

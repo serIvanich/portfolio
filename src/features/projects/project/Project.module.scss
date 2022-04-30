@@ -1,13 +1,14 @@
 @import '../../../common/styles/sass/mixins.scss';
+@import '../../../common/styles/sass/variables.scss';
 
 .project {
     @include itemBlock(300px, 350px);
     
     border-radius: 5px;
-    box-shadow: 0 0 10px 2px white;
-    background-color: rgb(54, 54, 54);
-    color: azure;
-
+    @include shadowBox();
+    //box-shadow: 0 0 10px 2px white;
+    
+    
     
     .projectPictureBlock {
         position: relative;
@@ -24,7 +25,7 @@
             font-size: 1.3em;
             text-align: center;
             text-decoration: none;
-            color: white;
+            color: $textColor;
             opacity: .5;
             z-index: 11;
         }
@@ -57,7 +58,7 @@
             height: 3px;
             left: 0;
             bottom: 0;
-            background-color: beige;
+            background-color: $textColor;
             z-index: -1;
             text-decoration: underline;
         }

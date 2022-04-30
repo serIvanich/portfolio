@@ -1,4 +1,5 @@
 @import '../../../common/styles/sass/mixins.scss';
+@import '../../../common/styles/sass/variables.scss';
 
 .skill {
     @include itemBlock(200px, 150px);
@@ -6,10 +7,9 @@
     position: relative;
     margin-top: 150px;
     border-radius: 3px;
-    background-color: rgb(51, 51, 51);
-    color: azure;
+    
     padding: 10px;
-    box-shadow: 0 0 8px 5px;
+    @include shadowBox();
 
     @include max-bp('mini') {
         
@@ -31,7 +31,7 @@
 
         & img{
             width: 150px;
-            background-color: rgb(94, 94, 94);
+            background-color: lighten($secondBackgroundColor, 15%);
         }
     }
     .description {

@@ -78,12 +78,14 @@
 }
 
 @mixin itemBlock($width, $minHeight: 300px) {
-  min-height: $minHeight;
+    min-height: $minHeight;
     width: $width;
     margin: 2vmin ;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: $textColor;
+    background-color: $secondBackgroundColor;
 
     @include max-bp('mini') {
       max-width: 280px;
@@ -112,4 +114,9 @@
   writing-mode: tb-rl;
   text-align: center;
   transform: rotate(180deg);
+}
+
+@mixin shadowBox($n: 1) {
+
+  box-shadow:0 0 13px*$n 7px*$n rgba($color: lighten($generalBackgroundColor, 99%), $alpha: 0.9);
 }
