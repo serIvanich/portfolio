@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.89891616.chunk.css",
-    "main.js": "/portfolio/static/js/main.58ef3e7d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.58ef3e7d.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.f8879562.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.f8879562.js.map",
-    "static/js/2.833b0a6e.chunk.js": "/portfolio/static/js/2.833b0a6e.chunk.js",
-    "static/js/2.833b0a6e.chunk.js.map": "/portfolio/static/js/2.833b0a6e.chunk.js.map",
-    "static/js/3.432605a2.chunk.js": "/portfolio/static/js/3.432605a2.chunk.js",
-    "static/js/3.432605a2.chunk.js.map": "/portfolio/static/js/3.432605a2.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.6899ebfc.chunk.css",
+    "main.js": "/portfolio/static/js/main.ec989374.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ec989374.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.5cfc88e8.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.5cfc88e8.js.map",
+    "static/js/2.72634a27.chunk.js": "/portfolio/static/js/2.72634a27.chunk.js",
+    "static/js/2.72634a27.chunk.js.map": "/portfolio/static/js/2.72634a27.chunk.js.map",
+    "static/js/3.28d19bee.chunk.js": "/portfolio/static/js/3.28d19bee.chunk.js",
+    "static/js/3.28d19bee.chunk.js.map": "/portfolio/static/js/3.28d19bee.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.89891616.chunk.css.map": "/portfolio/static/css/main.89891616.chunk.css.map",
-    "static/js/2.833b0a6e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.833b0a6e.chunk.js.LICENSE.txt",
+    "static/css/main.6899ebfc.chunk.css.map": "/portfolio/static/css/main.6899ebfc.chunk.css.map",
+    "static/js/2.72634a27.chunk.js.LICENSE.txt": "/portfolio/static/js/2.72634a27.chunk.js.LICENSE.txt",
     "static/media/kards-image.7c24d26d.jpg": "/portfolio/static/media/kards-image.7c24d26d.jpg",
     "static/media/my-photo2.00e4e40b.jpg": "/portfolio/static/media/my-photo2.00e4e40b.jpg",
     "static/media/preloader.279ed7ee.gif": "/portfolio/static/media/preloader.279ed7ee.gif",
@@ -19,9 +19,9 @@
     "static/media/telegram_logo.66a06c6d.png": "/portfolio/static/media/telegram_logo.66a06c6d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f8879562.js",
-    "static/js/2.833b0a6e.chunk.js",
-    "static/css/main.89891616.chunk.css",
-    "static/js/main.58ef3e7d.chunk.js"
+    "static/js/runtime-main.5cfc88e8.js",
+    "static/js/2.72634a27.chunk.js",
+    "static/css/main.6899ebfc.chunk.css",
+    "static/js/main.ec989374.chunk.js"
   ]
 }
