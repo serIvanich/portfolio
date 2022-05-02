@@ -2,6 +2,7 @@
 
 .title {
   @include sideNamePage();
+  
 
   @include max-bp('small') {
     position: static;
@@ -9,11 +10,50 @@
     transform: rotate(0deg);
 
     &.titleMain{
-      transform-origin: bottom;
+      padding-bottom: 150px;
       writing-mode: tb-rl;
       transform: rotate(180deg);
     }
   };
 
-  text-shadow: 5px 5px  5px rgb(124, 124, 124)
+  text-shadow: 5px 5px  5px rgb(124, 124, 124);
+  &.titleMain {
+    animation: titleEffect 1s ease 0.5s;
+  }
+}
+
+@keyframes titleEffect {
+  0% {
+    transform: scale3d(100%, 100%, 100%) rotate(180deg);
+  }
+  10% {
+    transform: scale3d(130%, 170%, 100%) rotate(180deg);
+  }
+  20% {
+    transform: scale3d(100%, 100%, 100%) rotate(180deg);
+  }
+  30% {
+    transform: scale3d(110%, 140%, 100%) rotate(180deg);
+  }
+  40% {
+    transform: scale3d(100%, 100%, 100%) rotate(180deg);
+  }
+  50% {
+    transform: scale3d(40%, 70%, 100%) rotate(180deg);
+  }
+  60% {
+    transform: scale3d(100%, 100%, 100%) rotate(180deg);
+  }
+  70% {
+    transform: scale3d(110%, 160%, 100%) rotate(180deg);
+  }
+  80% {
+    transform: scale3d(100%, 100%, 100%) rotate(180deg);
+  }
+  90% {
+    transform: scale3d(110%, 130%, 100%) rotate(180deg);
+  }
+  100% {
+    transform: scale3d(100%, 100%, 100%) rotate(180deg);
+  }
 }

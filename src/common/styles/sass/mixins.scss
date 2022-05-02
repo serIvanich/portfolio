@@ -6,7 +6,7 @@
   font-family: $fontFamily; //'Arial', 'sans-serif'
   font-size: $fontSize;  //16px;
   line-height: 1.2;
-  color: $textColor;
+  color: setColor($generalBackgroundColor, 95%, 70);
 }
 
 // mixin for adaptability 
@@ -84,7 +84,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $textColor;
+    // color: $textColor;
     background-color: $secondBackgroundColor;
 
     @include max-bp('mini') {
@@ -120,3 +120,13 @@
 
   box-shadow:0 0 13px*$n 7px*$n rgba($color: lighten($generalBackgroundColor, 99%), $alpha: 0.9);
 }
+
+@function setColor($color, $number, $brightColor: 50) {
+  @if (color.lightness($color) > $brightColor) {
+    $color: darken($color, $number);
+  } @else {
+    $color: lighten($color, $number);
+  }
+  @return $color;
+}
+

@@ -1,12 +1,7 @@
 @use 'sass:color';
 
 
-
-
-
-$primaryColor: rgba(56, 56, 56, 0.667);
- 
-$generalBackgroundColor: rgb(48, 49, 47);
+$generalBackgroundColor: rgb(46, 44, 45);
 $evenBackgroundColor: lighten($generalBackgroundColor, 3%);
 $textColor: lighten($generalBackgroundColor, 95%);
 $secondBackgroundColor: lighten($generalBackgroundColor, 13%);
