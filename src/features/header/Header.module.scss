@@ -71,37 +71,6 @@
   }
 }
 
-// .mobileHeaderContainer {
-//     display: none; 
-
-//     @include max-bp('small') {
-//        display: block;
-//        position: fixed;
-//        z-index: 100;
-
-//      }
-
-
-     
-
-// .mobileNavMenu{
-//     position: fixed;
-//     top: 20px;
-//     right: 20px;
-//     font-size: 33px;
-//     display: block;
-//     opacity: 0.5;
-//     cursor: pointer;
-//     z-index: 120;
-//     border-radius: 45%;
-   
-    
-//     &:hover {
-//       box-shadow: 3px 3px 15px white;
-//       opacity: 1;
-//     }
-//   }
- 
 .navbarContainer {
   width: 100%;
   display:flex;
@@ -124,7 +93,7 @@
       display: flex;
       justify-content: flex-end;
       width: 100vw;
-      height: 105vh;
+      height: 103vh;
       background-color: rgba(37, 85, 97, 0.8);
       z-index: 110;
       
