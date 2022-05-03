@@ -1,10 +1,12 @@
 @use 'sass:color';
 
 
-$generalBackgroundColor: rgb(46, 44, 45);
-$evenBackgroundColor: lighten($generalBackgroundColor, 3%);
-$textColor: lighten($generalBackgroundColor, 95%);
-$secondBackgroundColor: lighten($generalBackgroundColor, 13%);
+$generalBackgroundColor: rgb(46, 46, 46);
+$evenBackgroundColor: setColor($generalBackgroundColor, 3%);
+$textColor: setColor($generalBackgroundColor, 95%, 70);
+$secondBackgroundColor: setColor($generalBackgroundColor, 13%);
+$footerColor: rgb(84, 107, 45);
+$borderSkillColor: rgb(95, 158, 160);
 
 $breakpoints: (
   strech: 1020px,

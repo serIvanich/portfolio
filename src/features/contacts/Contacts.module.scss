@@ -4,9 +4,7 @@
 .contactsBlock {
 
   @include templatePageBlock();
- 
-  color: lavender;
-
+  @include text();
   .contactsContainer {
 
     @include templatePageContainer();

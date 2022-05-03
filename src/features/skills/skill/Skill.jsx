@@ -9,7 +9,7 @@ export const Skill = ({logo, title, description}) => {
             <div className={s.icon} >
                 <img src={logo} alt='skill'/>
             </div>
-            <h2>{title}</h2>
+            <h3>{title}</h3>
             <span className={s.description}>{description}</span>
         </div>
     )

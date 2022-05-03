@@ -7,26 +7,26 @@
     position: relative;
     margin-top: 150px;
     border-radius: 3px;
-    
     padding: 10px;
+
     @include shadowBox();
 
     @include max-bp('mini') {
         
-        margin: 15vh 0;
+        margin: 100px 0;
     }
 
-    & h2 {
-        margin-top: 1.2em;
+    & h3 {
+        margin-top: 50px;
     }
 
     .icon {
         position: absolute;
-        top: -7.5em;
+        top: -111px;
         margin: 0 auto;
         display: flex;
         border-radius: 50%;
-        border: 3px solid cadetblue;
+        border: 3px solid $borderSkillColor;
         overflow: hidden;
 
         & img{

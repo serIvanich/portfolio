@@ -3,12 +3,12 @@
 
 .footerBlock {
 @include templatePageBlock($minHeight:40vh);
-    font-size: 1.1em;
-    color: darkolivegreen;
+    
+    
     .footerContainer {
 
         @include templatePageContainer();
-
+        color: $footerColor;
         .infoBlock{
             width: 400px;
             margin-bottom: 0.2em;

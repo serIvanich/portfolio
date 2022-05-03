@@ -3,11 +3,11 @@ import s from './Footer.module.scss'
 import gitImg from '../../assets/image/git_logo.png'
 import telegramImg from '../../assets/image/telegram_logo.png'
 import linkendinImg from '../../assets/image/linkendin_logo.png'
-
+import { projectLinks } from '../../assets/links/project-links';
 
 
 export const Footer = () => {
-
+    const {myGithub} = projectLinks 
     return (
         <div className={s.footerBlock}>
             <div className={s.footerContainer}>
@@ -20,7 +20,7 @@ export const Footer = () => {
                 
                 <div className={s.footerNav}>
 
-                    <IconLink link={gitImg}/>
+                    <IconLink link={gitImg} goTo={myGithub}/>
                     <IconLink link={telegramImg}/>
                     <IconLink link={linkendinImg}/>
                    
@@ -41,11 +41,11 @@ const InfoRow = ({title, value}) => {
     )
 }
 
-const IconLink = ({link}) => {
+const IconLink = ({link, goTo=''}) => {
 
     return (
         <div className={s.link}>
-            <img src={link} alt='git'/>
+            <a href={goTo}><img src={link} alt='git'/></a>
         </div>
     )
 }

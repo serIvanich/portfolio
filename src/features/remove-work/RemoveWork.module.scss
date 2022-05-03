@@ -10,8 +10,7 @@
    
     .title {
       text-align: center;
-      font-size: 33px;
-      color: $textColor;
+      line-height: 1.3em;
       
     }
 
@@ -32,7 +31,7 @@
       @include shadowBox(2);
 
       &:hover {
-        color: darken($textColor, 100%);
+        color: invert($textColor, 100%);
       }
     }
 

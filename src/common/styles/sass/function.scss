@@ -1,0 +1,13 @@
+
+@use 'sass:color';
+
+
+@function setColor($color, $interest, $brightColor: 50) {
+  @if (color.lightness($color) > $brightColor) {
+    @return darken($color, $interest);
+  } @else {
+    @return  lighten($color, $interest);
+  }
+  
+}
+
