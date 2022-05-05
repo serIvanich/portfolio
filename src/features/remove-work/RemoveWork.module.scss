@@ -17,9 +17,8 @@
     .linkOffRemoveWork {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-weight: bolder;
-      font-size: 35px;
       margin-bottom: 25px;
-      padding: 10px;
+      padding: 20px;
       border: 2px solid lightskyblue;
       border-radius: 5px;
       background-color: powderblue;
@@ -29,6 +28,7 @@
       cursor: pointer;
       color: $textColor;
       @include shadowBox(2);
+     
 
       &:hover {
         color: invert($textColor, 100%);

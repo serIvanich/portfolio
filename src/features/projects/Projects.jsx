@@ -33,7 +33,7 @@ export const Projects = () => {
       <div className={s.projectsContainer}>
         <Title title={'Projects'}/>
         <div className={s.allProjects}>
-            <Project projectTitle={'todo list'}
+            <Project projectTitle={'to do list'}
                 projectDescription={'To add TypeScript to an existing Create React App project, first install.'}
                 style={todoListImg} linkTo={todolist}
             />

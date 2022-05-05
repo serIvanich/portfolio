@@ -16,7 +16,7 @@ export const RemoveWork = () => {
                   smooth={true}
                   duration={3000}
                 >
-                    write me
+                    message me
                 </Link>
                 
             </div>

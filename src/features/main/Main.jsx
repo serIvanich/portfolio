@@ -8,6 +8,7 @@ const photo = {
     backgroundImage: `url(${myPhoto})`,
     backgroundSize: 'cover',
 }
+
     return (
         <div className={s.mainBlock} id={'main'}> 
            <Title title={'web developer'} />
