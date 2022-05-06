@@ -98,6 +98,7 @@
   }
 }
 
+//setting page title
 @mixin sideNamePage{
   position: absolute;
   top: 0;
@@ -120,11 +121,13 @@
   transform: rotate(180deg);
 }
 
-@mixin shadowBox($n: 1) {
 
+//box shadow tamplate
+@mixin shadowBox($n: 1) {
   box-shadow:0 0 13px*$n 7px*$n rgba($color: color.invert($generalBackgroundColor, 100%), $alpha: 0.9);
 }
 
+//animation for main taitle
 @mixin transformTitle($x: 1,$y: 1, $degAngy: 180deg) {
   transform: scale($x, $y) rotate($degAngy);
 }

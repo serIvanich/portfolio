@@ -6,28 +6,29 @@ import todoImage from './../../assets/image/todo-list-image.jpg'
 import socialNetImage from './../../assets/image/social-network-images.jpg'
 import cardsImage from './../../assets/image/kards-image.jpg'
 import counterImage from './../../assets/image/counter-image.jpg'
-import { projectLinks } from '../../assets/links/project-links';
+import shoppingCartImage from './../../assets/image/shopping-cart-image.png'
+import gradientImage from './../../assets/image/gradient-image.png'
+import { projectLinks } from '../../assets/links/project-links'
 
 
 export const Projects = () => {
 
-  const {todolist, socialNetwork, knowledgeCards, counter} = projectLinks
-  const socialImg = {
-    backgroundImage: `url(${socialNetImage})`,
-    backgroundSize: 'cover',
+  const {todolist, socialNetwork, knowledgeCards, counter, shoppingCart, setGradient} = projectLinks
+  
+  const socialImg = createBackgroundStyles(socialNetImage)
+  const todoListImg = createBackgroundStyles(todoImage)
+  const cardsImg = createBackgroundStyles(cardsImage)
+  const counterImg = createBackgroundStyles(counterImage)
+  const shoppingCartImg = createBackgroundStyles(shoppingCartImage)
+  const gradientImg = createBackgroundStyles(gradientImage)
+
+  function createBackgroundStyles(url) {
+    return {
+      backgroundImage: `url(${url})`,
+      backgroundSize: 'cover',
+    }
   }
-  const todoListImg = {
-    backgroundImage: `url(${todoImage})`,
-    backgroundSize: 'cover',
-  }
-  const cardsImg = {
-    backgroundImage: `url(${cardsImage})`,
-    backgroundSize: 'cover',
-  }
-  const counterImg = {
-    backgroundImage: `url(${counterImage})`,
-    backgroundSize: 'cover',
-  }
+
   return (
     <div className={s.projectsBlock}  id={'projects'}>
       <div className={s.projectsContainer}>
@@ -49,7 +50,14 @@ export const Projects = () => {
                 projectDescription={' counter for use something'}
                 style={counterImg} linkTo={counter}
             />
-
+            <Project projectTitle={'shopping cart'}
+                projectDescription={' you can add and delete product that you need '}
+                style={shoppingCartImg} linkTo={shoppingCart}
+            />
+            <Project projectTitle={'set gradient'}
+                projectDescription={' create your own gragients '}
+                style={gradientImg} linkTo={setGradient}
+            />
         </div>
       </div>
     </div>
