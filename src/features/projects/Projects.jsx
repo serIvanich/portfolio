@@ -8,12 +8,13 @@ import cardsImage from './../../assets/image/kards-image.jpg'
 import counterImage from './../../assets/image/counter-image.jpg'
 import shoppingCartImage from './../../assets/image/shopping-cart-image.png'
 import gradientImage from './../../assets/image/gradient-image.png'
+import notebookImage from './../../assets/image/notebook-image.png'
 import { projectLinks } from '../../assets/links/project-links'
 
 
 export const Projects = () => {
 
-  const {todolist, socialNetwork, knowledgeCards, counter, shoppingCart, setGradient} = projectLinks
+  const {todolist, socialNetwork, knowledgeCards, counter, shoppingCart, setGradient, notebook} = projectLinks
   
   const socialImg = createBackgroundStyles(socialNetImage)
   const todoListImg = createBackgroundStyles(todoImage)
@@ -21,6 +22,7 @@ export const Projects = () => {
   const counterImg = createBackgroundStyles(counterImage)
   const shoppingCartImg = createBackgroundStyles(shoppingCartImage)
   const gradientImg = createBackgroundStyles(gradientImage)
+  const notebookImg = createBackgroundStyles(notebookImage)
 
   function createBackgroundStyles(url) {
     return {
@@ -57,6 +59,10 @@ export const Projects = () => {
             <Project projectTitle={'set gradient'}
                 projectDescription={' create your own gragients '}
                 style={gradientImg} linkTo={setGradient}
+            />
+            <Project projectTitle={'notebook'}
+                projectDescription={' you can have under controll your matters '}
+                style={notebookImg} linkTo={notebook}
             />
         </div>
       </div>
