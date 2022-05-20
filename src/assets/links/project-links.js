@@ -7,5 +7,5 @@ export const projectLinks = {
   knowledgeCards: 'https://serIvanich.github.io/knowledge-cards',
   shoppingCart: 'https://serivanich.github.io/shopping-cart',
   setGradient: 'https://serivanich.github.io/gradients-constructor',
-  notebook: ' https://serivanich.github.io/task_2'
+  notebook: ' https://serivanich.github.io/my-notebook'
 }
