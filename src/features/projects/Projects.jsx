@@ -10,12 +10,13 @@ import shoppingCartImage from './../../assets/image/shopping-cart-image.png'
 import gradientImage from './../../assets/image/gradient-image.png'
 import notebookImage from './../../assets/image/notebook-image.png'
 import { projectLinks } from '../../assets/links/project-links'
-
+import { projectsDescription } from '../../assets/text-description/projects-description';
 
 export const Projects = () => {
 
   const {todolist, socialNetwork, knowledgeCards, counter, shoppingCart, setGradient, notebook} = projectLinks
-  
+  const {descriptionTodoList, descriptionGradients, descriptionShoppingCart, descriptionMyNotebook, descriptionCounter, descriptionSocialNetwork, descriptionCards} = projectsDescription
+
   const socialImg = createBackgroundStyles(socialNetImage)
   const todoListImg = createBackgroundStyles(todoImage)
   const cardsImg = createBackgroundStyles(cardsImage)
@@ -37,32 +38,33 @@ export const Projects = () => {
         <Title title={'Projects'}/>
         <div className={s.allProjects}>
             <Project projectTitle={'to do list'}
-                projectDescription={'To add TypeScript to an existing Create React App project, first install.'}
+                projectDescription={descriptionTodoList}
                 style={todoListImg} linkTo={todolist}
             />
-            <Project projectTitle={'social network'}
-                projectDescription={'CSS Modules let you use the same CSS class name'}
-                style={socialImg} linkTo={socialNetwork}
-            />
-            <Project projectTitle={'cards'}
-                projectDescription={' let you use the same cards'}
-                style={cardsImg} linkTo={knowledgeCards}
-            />
-            <Project projectTitle={'counter'}
-                projectDescription={' counter for use something'}
-                style={counterImg} linkTo={counter}
-            />
             <Project projectTitle={'shopping cart'}
-                projectDescription={' you can add and delete product that you need '}
+                projectDescription={descriptionShoppingCart}
                 style={shoppingCartImg} linkTo={shoppingCart}
             />
             <Project projectTitle={'set gradient'}
-                projectDescription={' create your own gragients '}
+                projectDescription={descriptionGradients}
                 style={gradientImg} linkTo={setGradient}
             />
             <Project projectTitle={'notebook'}
-                projectDescription={' you can have under controll your matters '}
+                projectDescription={descriptionMyNotebook}
                 style={notebookImg} linkTo={notebook}
+            />
+
+            <Project projectTitle={'social network'}
+                projectDescription={descriptionSocialNetwork}
+                style={socialImg} linkTo={socialNetwork}
+            />
+            <Project projectTitle={'cards'}
+                projectDescription={descriptionCards}
+                style={cardsImg} linkTo={knowledgeCards}
+            />
+            <Project projectTitle={'counter'}
+                projectDescription={descriptionCounter}
+                style={counterImg} linkTo={counter}
             />
         </div>
       </div>

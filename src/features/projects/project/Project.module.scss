@@ -48,7 +48,7 @@
         padding-bottom: 5px;
         cursor: pointer;
 
-        &::after {
+        &::before {
             position: absolute;
             content: '';
             width: 100%;
@@ -58,6 +58,19 @@
             background-color: $textColor;
             z-index: -1;
             text-decoration: underline;
+        }
+
+        &::after {
+            content: 'i';
+            position: absolute;
+            top: -10px;
+            margin-left: 15px;
+            padding: 0 8px;
+            border: solid 1px $textColor;
+            border-radius: 50%;
+            font-size: 0.5em;
+            text-align: center;
+          
         }
     }
     .projectDescription {
