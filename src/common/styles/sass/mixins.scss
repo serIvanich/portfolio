@@ -9,14 +9,14 @@
   font-size: $fontSize;  //16px;
   line-height: 1.2em;
   color: setColor($generalBackgroundColor, 95%, 70);
-}
+};
 
 // mixin for adaptability 
 @mixin max-bp($breakpoint) {
   @media (max-width: map.get($breakpoints, $breakpoint)) { 
     @content
   }
-}
+};
 
 //adaptability settings width
 
@@ -29,7 +29,7 @@
   @include max-bp('mini') {
     width: $miniWidth;
   }
-}
+};
 
 //page block template 
 
@@ -41,7 +41,7 @@
   background-color: $generalBackgroundColor;
 
   @include text();
-}
+};
 
 // page container template
 
@@ -67,7 +67,7 @@
     width: 95%;
   }
 
-}
+};
 
 //  template 'box for items, item-block'
 
@@ -80,12 +80,12 @@
   justify-content: space-evenly;
   padding-top: 10vh;
   
-}
+};
 
 @mixin itemBlock($width, $minHeight: 300px) {
     min-height: $minHeight;
     width: $width;
-    margin: 20px ;
+    margin: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +96,7 @@
       max-width: 280px;
       margin: 20px 0;
   }
-}
+};
 
 //setting page title
 @mixin sideNamePage{
@@ -119,21 +119,21 @@
   writing-mode: tb-rl;
   text-align: center;
   transform: rotate(180deg);
-}
+};
 
 
 //box shadow tamplate
 @mixin shadowBox($n: 1) {
   box-shadow:0 0 13px*$n 7px*$n rgba($color: color.invert($generalBackgroundColor, 100%), $alpha: 0.9);
-}
+};
 
 //animation for main taitle
 @mixin transformTitle($x: 1,$y: 1, $degAngy: 180deg) {
   transform: scale($x, $y) rotate($degAngy);
-}
+};
 
 // animation for main background
 
 @mixin mainBackgroundAnime($x, $y) {
   transform: translate($x, $y)
-}
+};

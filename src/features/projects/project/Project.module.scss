@@ -2,8 +2,8 @@
 @import '../../../common/styles/sass/variables.scss';
 
 .project {
-    @include itemBlock(300px, 350px);
-    
+    @include itemBlock(300px, 280px);
+    //margin-bottom: 50px;
     border-radius: 5px;
     @include shadowBox();
         
@@ -41,7 +41,7 @@
         }
     }
 
-    .descriptionTitle {
+    .projectTitleDescription {
         position: relative;
         outline: none;
         z-index: 0;
@@ -73,9 +73,25 @@
           
         }
     }
-    .projectDescription {
+    .projectTextDescription {
+        display: flex;
+        align-items: center;
+        max-width: 700px;
+        min-height: 400px;
+        padding: 20px;
+        margin: auto 50px;
+        border-radius: 7px;
+        background-color: $secondBackgroundColor;
+        font-size: 1.2em;
         text-align: center;
-       
+
+        @include shadowBox(2);
+
+        @include max-bp('mini') {
+            margin: auto 10px;
+            padding: 7px;
+        }
+        
     }
 }
 
