@@ -30,12 +30,15 @@ export const App = () => {
    
     const {status, onScroll} = state
     const appLoading = status === appStatus.loading
+
+    // after you sent me email
     const gmailSuccessMessage = `
-    You sent the letter for me, thank you! I will answer you necessary.`
-   const gmailErrorMessage = `
-   Sorry, but something went wrong! 
-    ${state.error? state.error: '????'}`
-   const showModal = !onScroll && (status === appStatus.loading 
+        You sent the letter for me, thank you! I will answer you necessary.`
+    const gmailErrorMessage = `
+        Sorry, but something went wrong! 
+        ${state.error? state.error: '????'}`
+        
+    const showModal = !onScroll && (status === appStatus.loading 
         || status === appStatus.gmailSuccess
         || status === appStatus.gmailError)
    
