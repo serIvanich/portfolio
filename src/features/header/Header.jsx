@@ -9,17 +9,15 @@ export const Header = React.memo(({changeScroll}) => {
     const [showHeader, setShowHeader] = useState(false);
     const [showMobileNavbar, setShowMobileNavbar] = useState(false);
     
-    // for use scroll))
-    console.log(scroll)
     // show mobile navbar
-  const stylesMobileNavbar = {
-    transform: showMobileNavbar ?'translateX(0)':'translateX(100%)', 
-   } 
-// show general heder   
-   const styles = {
-    transform: showHeader ?'translateY(-180px)':'translateY(0px)',
+    const stylesMobileNavbar = {
+        transform: showMobileNavbar ?'translateX(0)':'translateX(100%)', 
+    } 
+    // show general heder   
+    const styles = {
+        transform: showHeader ?'translateY(-180px)':'translateY(0px)',
     
-   } 
+    } 
 
     const onScroll = useCallback(() => setScroll((scroll) => {
         const newScroll = Math.round(window.scrollY)
@@ -35,7 +33,7 @@ export const Header = React.memo(({changeScroll}) => {
         onScroll();
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
-      }, [onScroll])
+    }, [onScroll])
       
        
     const closeMenu = () => {
@@ -46,13 +44,13 @@ export const Header = React.memo(({changeScroll}) => {
         setShowMobileNavbar(true)
         changeScroll(false)
     
-      }
+    }
     
-      const closeMobileMenu = () => {
+    const closeMobileMenu = () => {
      
         setShowMobileNavbar(false)
         changeScroll(true)
-      }
+    }
        
     return (
         <div className={s.headerContainer} style={styles}>
