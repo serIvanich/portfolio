@@ -5,16 +5,12 @@ import s from './Project.module.scss'
 export const Project = ({projectTitle, projectDescription, linkTo, style}) => {
     const [showDescription, setShowDescription] = useState(false)
     const openDescription = () => {
-        console.log('open')
         setShowDescription(true)
     }
     const closeDescription = () => {
-        console.log('close')
         setShowDescription(false) 
     }
-    // const descriptionStyles = {
-    //     display:showDescription? 'inline-block' : 'none'
-    // }
+    
     return (
         <div className={s.project}>
             <div className={s.projectPictureBlock} style={style}>
@@ -26,7 +22,6 @@ export const Project = ({projectTitle, projectDescription, linkTo, style}) => {
                     {projectDescription}        
                 </div>
             </ModalContainer>}
-            {/* <span className={s.projectDescription} style={descriptionStyles}>{projectDescription}</span> */}
         </div>
     )
 }
