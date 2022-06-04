@@ -1,13 +1,39 @@
 
 export const projectsDescription = {
   descriptionTodoList: `That's a learning project, which I've done on my classes of React/TS developing. 
-  In the project you can create your own list of actions and have control over them`,
-  descriptionSocialNetwork: `in work...mobile version is not adaptive...That's social network for persons who learning programing with online course "Samuray's way"`,
-  descriptionCards: `in work...mobile version is not adaptive...This project we did in team fron three persons.
-  I've been own of project in github and did merge for project`,
-  descriptionCounter: `That's a pet project where you can increment number from min to max border setting`,
-  descriptionShoppingCart: `This's my pet-project where you can choose a project for buying in the shopping cart
-  and write down your data`,
-  descriptionGradients: `That project is giving pissibility to create some color's gradients and change them if you want`,
-  descriptionMyNotebook: `This's my test project where user can have under controll his schedule`,
+    In the project you can create your own list of actions and have control over them
+    This project was developed with TypeScript to had the best controlle under project's data and functions,
+    I used Material UI to had a formated and adaptive page on the user's screen 
+    Redux Toolkit is helping to work with state of project, create, change, delete data,
+    working with project's server(get, put, update, delete with help of Axios).
+    For working with project's form i used formik who is an object from  hook useFormik from formik...
+    Also project have different tests, for testing functions and components 
+    with help react testing library, jest, Storybook.
+    `,
+  descriptionSocialNetwork: `in work...mobile version is not adaptive...
+  That's social network for persons who learning programing with online course "Samuray's way"
+  `,
+  descriptionCards: `in work...mobile version is not adaptive...
+  This project we did in team fron three persons.
+  I've been own of project in github and did merge for project
+  `,
+  descriptionCounter: `This is a pet project where the user increases  number  by one from the minimum to the maximum limit 
+  which he can change.Application was created using React/TypeScript technology. 
+  I use React-Redux for work with the state and localStorage for save user's setting parameters .
+  `,
+  descriptionShoppingCart: `Shopping cart is a small application that allows the user to select products and enter their details.
+  The project was created using React/JS. React-toolkit helps to control its state. 
+  Axios helps us get a list of products from a remote server. 
+  SASS has made styling our components better and easier.
+  I used tests of reducers for controll their correct work.
+  `,
+  descriptionGradients: `Gradients constructor is a simple application created with React/TypeScript.
+  In this Project user can creates gradient from two colors which he entered. 
+  Also can changes gradient  created early.
+  For getting colors and changing i use the object formik from hook useFormik.  
+  SASS helps us to have easier work with components' styles.
+  There's a test for reducer in this project. 
+  `,
+  descriptionMyNotebook: `This's my test project where user can have under controll his schedule
+  `,
 } 
