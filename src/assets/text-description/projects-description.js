@@ -42,4 +42,6 @@ export const projectsDescription = {
   Also React-Redux, formik, react-thunk, SASS helped me to write this code more easily and conveniently. 
   There are  tests for control functions reducer and thunk in the project
   `,
+  descriptionChat: `This project helps learning and practice with Firebase.
+  It's in work...`
 } 

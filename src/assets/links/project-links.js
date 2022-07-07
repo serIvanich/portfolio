@@ -7,5 +7,6 @@ export const projectLinks = {
   knowledgeCards: 'https://serIvanich.github.io/knowledge-cards',
   shoppingCart: 'https://serivanich.github.io/shopping-cart',
   setGradient: 'https://serivanich.github.io/gradients-constructor',
-  notebook: ' https://serivanich.github.io/my-notebook'
+  notebook: ' https://serivanich.github.io/my-notebook',
+  liveChat: 'https://firetest-eb312.web.app/',
 }

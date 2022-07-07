@@ -9,13 +9,33 @@ import counterImage from './../../assets/image/counter-image.jpg'
 import shoppingCartImage from './../../assets/image/shopping-cart-image.png'
 import gradientImage from './../../assets/image/gradient-image.png'
 import notebookImage from './../../assets/image/notebook-image.png'
+import chatImage from './../../assets/image/chat-image.png'
 import { projectLinks } from '../../assets/links/project-links'
 import { projectsDescription } from '../../assets/text-description/projects-description';
 
 export const Projects = () => {
 
-  const {todolist, socialNetwork, knowledgeCards, counter, shoppingCart, setGradient, notebook} = projectLinks
-  const {descriptionTodoList, descriptionGradients, descriptionShoppingCart, descriptionMyNotebook, descriptionCounter, descriptionSocialNetwork, descriptionCards} = projectsDescription
+  const {
+          todolist, 
+          socialNetwork, 
+          knowledgeCards, 
+          counter, 
+          shoppingCart, 
+          setGradient, 
+          notebook, 
+          liveChat
+        } = projectLinks
+        
+  const {
+          descriptionTodoList,
+          descriptionGradients,
+          descriptionShoppingCart,
+          descriptionMyNotebook, 
+          descriptionCounter,
+          descriptionSocialNetwork, 
+          descriptionCards,
+          descriptionChat,
+        } = projectsDescription
 
   const socialImg = createBackgroundStyles(socialNetImage)
   const todoListImg = createBackgroundStyles(todoImage)
@@ -24,6 +44,7 @@ export const Projects = () => {
   const shoppingCartImg = createBackgroundStyles(shoppingCartImage)
   const gradientImg = createBackgroundStyles(gradientImage)
   const notebookImg = createBackgroundStyles(notebookImage)
+  const chatImg = createBackgroundStyles(chatImage)
 
   function createBackgroundStyles(url) {
     return {
@@ -66,6 +87,11 @@ export const Projects = () => {
                 projectDescription={descriptionCounter}
                 style={counterImg} linkTo={counter}
             />
+            <Project projectTitle={'live-chat'}
+                projectDescription={descriptionChat}
+                style={chatImg} linkTo={liveChat}
+            />
+
         </div>
       </div>
     </div>
