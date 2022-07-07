@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d6104a0e.chunk.css",
-    "main.js": "/portfolio/static/js/main.22bc6a77.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.22bc6a77.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.c0baa39a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c0baa39a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5cfc88e8.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5cfc88e8.js.map",
     "static/js/2.4bd3f527.chunk.js": "/portfolio/static/js/2.4bd3f527.chunk.js",
@@ -12,6 +12,7 @@
     "index.html": "/portfolio/index.html",
     "static/css/main.d6104a0e.chunk.css.map": "/portfolio/static/css/main.d6104a0e.chunk.css.map",
     "static/js/2.4bd3f527.chunk.js.LICENSE.txt": "/portfolio/static/js/2.4bd3f527.chunk.js.LICENSE.txt",
+    "static/media/chat-image.4168bc9a.png": "/portfolio/static/media/chat-image.4168bc9a.png",
     "static/media/gradient-image.dbef5fee.png": "/portfolio/static/media/gradient-image.dbef5fee.png",
     "static/media/kards-image.7c24d26d.jpg": "/portfolio/static/media/kards-image.7c24d26d.jpg",
     "static/media/Main.module.scss": "/portfolio/static/media/main-background.fdfea1f9.jpg",
@@ -26,6 +27,6 @@
     "static/js/runtime-main.5cfc88e8.js",
     "static/js/2.4bd3f527.chunk.js",
     "static/css/main.d6104a0e.chunk.css",
-    "static/js/main.22bc6a77.chunk.js"
+    "static/js/main.c0baa39a.chunk.js"
   ]
 }
