@@ -1,4 +1,3 @@
-
 export const projectsDescription = {
   descriptionTodoList: `That's a learning project, which I've done on my classes of React/TS developing. 
     In the project you can create your own list of actions and have control over them
@@ -43,5 +42,5 @@ export const projectsDescription = {
   There are  tests for control functions reducer and thunk in the project
   `,
   descriptionChat: `This project helps learning and practice with Firebase.
-  It's in work...`
-} 
+  It's in work...`,
+};
