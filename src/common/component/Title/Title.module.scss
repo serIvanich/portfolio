@@ -2,20 +2,18 @@
 
 .title {
   @include sideNamePage();
-  
 
   @include max-bp('small') {
     position: static;
     writing-mode: horizontal-tb;
     transform: rotate(0deg);
 
-    &.titleMain{
+    &.titleMain {
       padding-bottom: 150px;
       writing-mode: tb-rl;
       transform: rotate(180deg);
     }
-
-  };
+  }
   @include max-bp('mini') {
     font-size: 1.8em;
     &.titleMain {
@@ -23,11 +21,10 @@
     }
   }
 
-  text-shadow: 5px 5px  5px rgb(124, 124, 124);
+  text-shadow: 5px 5px 5px rgb(124, 124, 124);
   &.titleMain {
     animation: titleEffect 1s ease 0.5s;
   }
-
 }
 
 @keyframes titleEffect {

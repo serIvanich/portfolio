@@ -1,8 +1,6 @@
-import React from 'react';
 import s from './ModalContainer.module.scss'
 
-export const ModalContainer = ({children, onClickModalContainer}) => {
-
+export function ModalContainer({ children, onClickModalContainer }) {
   const onClick = () => {
     if (onClickModalContainer) {
       onClickModalContainer()
@@ -10,11 +8,8 @@ export const ModalContainer = ({children, onClickModalContainer}) => {
   }
 
   return (
-    <div className={s.modalContainer} onClick={onClick}>
-
+    <checkbox className={s.modalContainer} onClick={onClick}>
       {children}
-    </div>
-
+    </checkbox>
   )
 }
-

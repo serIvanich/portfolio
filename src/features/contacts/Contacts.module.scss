@@ -1,20 +1,9 @@
 @import '../../common/styles/sass/mixins.scss';
 
-
 .contactsBlock {
-
   @include templatePageBlock();
   @include text();
   .contactsContainer {
-
     @include templatePageContainer();
-    
   }
 }
-
-
-
-
-
-
-

@@ -1,17 +1,14 @@
 @import '../../common/styles/sass/mixins.scss';
 
 .removeWorkBlock {
+  @include templatePageBlock($minHeight: 40vh);
 
-  @include templatePageBlock($minHeight:40vh);
-  
   .removeWorkContainer {
-
     @include templatePageContainer();
-   
+
     .title {
       text-align: center;
       line-height: 1.3em;
-      
     }
 
     .linkOffRemoveWork {
@@ -28,21 +25,13 @@
       cursor: pointer;
       color: $textColor;
       @include shadowBox(2);
-     
 
       &:hover {
         color: invert($textColor, 100%);
       }
     }
-
-
   }
-  &:hover{
+  &:hover {
     filter: invert(100%);
   }
-
 }
-
-
-
-

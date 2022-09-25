@@ -1,8 +1,6 @@
 @import '../../common/styles/sass/mixins.scss';
 
-
 .navContainer {
-
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -21,7 +19,6 @@
     margin-bottom: 50px;
     flex-direction: column;
     // align-items: flex-end;
-    
   }
   @include max-bp('mini') {
     margin-top: 25%;
@@ -34,7 +31,8 @@
     min-width: 110px;
     min-height: 40px;
     font-size: 1.8em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
 
     cursor: pointer;
 
@@ -43,30 +41,21 @@
       justify-content: flex-end;
       font-size: 2em;
 
-      &:hover{
+      &:hover {
         transform: none !important;
-
       }
-      
     }
 
     &:hover {
-
       transform: scaleY(150%);
       transition: all 0.5s ease 0s;
-
     }
-
-
-
   }
 
   .active {
     transform: scaleY(150%);
   }
 
-
-  @include max-bp('mini') {}
-
+  @include max-bp('mini') {
+  }
 }
-

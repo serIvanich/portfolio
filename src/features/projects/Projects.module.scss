@@ -1,19 +1,14 @@
 @import '../../common/styles/sass/mixins.scss';
 
 .projectsBlock {
-
-    @include templatePageBlock();
-    padding-bottom: 30px;
+  @include templatePageBlock();
+  padding-bottom: 30px;
 }
 
 .projectsContainer {
-
-    @include templatePageContainer();
-   
+  @include templatePageContainer();
 }
 
 .allProjects {
-
-    @include itemsBox();
- 
+  @include itemsBox();
 }

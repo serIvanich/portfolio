@@ -2,16 +2,16 @@
 
 .skillsBlock {
   @include templatePageBlock();
- 
+
   .skillsContainer {
     @include templatePageContainer();
-    
+
     .allSkills {
-     @include itemsBox();
+      @include itemsBox();
     }
   }
 
-.skillsSideImg {
-  @include sideNamePage()
-}
+  .skillsSideImg {
+    @include sideNamePage();
+  }
 }
