@@ -43,5 +43,4 @@ export const projectsDescription = {
   `,
   descriptionChat: `This project helps learning and practice with Firebase.
   It's in work...`,
-
 }

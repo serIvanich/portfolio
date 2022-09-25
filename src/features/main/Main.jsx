@@ -14,8 +14,7 @@ export function Main() {
       <div className={s.mainContainer}>
         <div className={s.info}>
           <div style={{ color: 'grey' }}>
-            <b>SORRY!But My Portfolio isn&apos;t ready yet</b>
-            <p>I am working for that)) And I think it&apos;ll be over soon))</p>
+            <p>I am working on improving this project))</p>
             <hr />
           </div>
 
@@ -32,4 +31,3 @@ export function Main() {
     </div>
   )
 }
-

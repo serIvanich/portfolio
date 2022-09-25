@@ -8,8 +8,8 @@ export function ModalContainer({ children, onClickModalContainer }) {
   }
 
   return (
-    <checkbox className={s.modalContainer} onClick={onClick}>
+    <div className={s.modalContainer} onClick={onClick} aria-hidden='true'>
       {children}
-    </checkbox>
+    </div>
   )
 }
