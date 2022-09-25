@@ -11,6 +11,7 @@ export function Project({ projectTitle, projectDescription, linkTo, style }) {
     setShowDescription(false)
   }
 
+
   return (
     <div className={s.project}>
       <div className={s.projectPictureBlock} style={style}>
@@ -30,5 +31,6 @@ export function Project({ projectTitle, projectDescription, linkTo, style }) {
         </ModalContainer>
       )}
     </div>
+
   )
 }

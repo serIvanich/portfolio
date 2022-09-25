@@ -18,6 +18,7 @@ export function Main() {
             <p>I am working for that)) And I think it&apos;ll be over soon))</p>
             <hr />
           </div>
+
           <span>Hello people!</span>
           <div>
             My name is <b>Serhii</b> and i am a FrontEnd Developer
@@ -31,3 +32,4 @@ export function Main() {
     </div>
   )
 }
+
