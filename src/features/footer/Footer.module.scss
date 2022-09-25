@@ -2,76 +2,58 @@
 @import '../../common/styles/sass/variables.scss';
 
 .footerBlock {
-@include templatePageBlock($minHeight:40vh);
-    
-    
-    .footerContainer {
+  @include templatePageBlock($minHeight: 40vh);
 
-        @include templatePageContainer();
-        color: $footerColor;
-        .infoBlock{
-            width: 400px;
-            margin-bottom: 2px;
-            padding: 20px;
-            border-radius: 5px;
-            background-color: lighten($generalBackgroundColor, 50%);
+  .footerContainer {
+    @include templatePageContainer();
+    color: $footerColor;
+    .infoBlock {
+      width: 400px;
+      margin-bottom: 2px;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: lighten($generalBackgroundColor, 50%);
 
-            .infoRow {
-               
-                display: flex;
-                padding: 7px 0;
+      .infoRow {
+        display: flex;
+        padding: 7px 0;
 
-                @include max-bp('mini') {
-
-                    flex-direction: column;
-                }
-
-                .infoRowTitle {
-                    flex: 1;
-                }
-                .infoRowValue{
-                    flex: 2;
-                }
-            
-            }
-
-            @include max-bp('mini') {
-
-                width: 250px;
-                padding: 10px;
-            }
+        @include max-bp('mini') {
+          flex-direction: column;
         }
-       
-        .footerNav {
 
-            @include templatePageContainer(row);
-            padding-top: 0;
-            border-radius: 5px;
-            background-color: lighten($generalBackgroundColor, 50%);;
-
-             @include max-bp('mini') {
-                 width: 100%;
-             }
-            .link {
-               
-                margin: 5px;
-               
-
-                & img{
-                    width: 77px;
-                    height: 77px;
-                    cursor: pointer;
-                }
-            }
-
+        .infoRowTitle {
+          flex: 1;
         }
-        
+        .infoRowValue {
+          flex: 2;
+        }
+      }
+
+      @include max-bp('mini') {
+        width: 250px;
+        padding: 10px;
+      }
     }
+
+    .footerNav {
+      @include templatePageContainer(row);
+      padding-top: 0;
+      border-radius: 5px;
+      background-color: lighten($generalBackgroundColor, 50%);
+
+      @include max-bp('mini') {
+        width: 100%;
+      }
+      .link {
+        margin: 5px;
+
+        & img {
+          width: 77px;
+          height: 77px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
-
-
-
-
-
-
-

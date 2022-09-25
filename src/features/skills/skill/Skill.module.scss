@@ -2,40 +2,38 @@
 @import '../../../common/styles/sass/variables.scss';
 
 .skill {
-    @include itemBlock(230px, 150px);
+  @include itemBlock(230px, 150px);
 
-    position: relative;
-    margin-top: 150px;
-    border-radius: 3px;
-    padding: 10px;
+  position: relative;
+  margin-top: 150px;
+  border-radius: 3px;
+  padding: 10px;
 
-    @include shadowBox();
+  @include shadowBox();
 
-    @include max-bp('mini') {
-        
-        margin: 100px 0;
+  @include max-bp('mini') {
+    margin: 100px 0;
+  }
+
+  & h3 {
+    margin-top: 50px;
+  }
+
+  .icon {
+    position: absolute;
+    top: -111px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 50%;
+    border: 3px solid $borderSkillColor;
+    overflow: hidden;
+
+    & img {
+      width: 150px;
+      background-color: lighten($secondBackgroundColor, 15%);
     }
-
-    & h3 {
-        margin-top: 50px;
-    }
-
-    .icon {
-        position: absolute;
-        top: -111px;
-        margin: 0 auto;
-        display: flex;
-        border-radius: 50%;
-        border: 3px solid $borderSkillColor;
-        overflow: hidden;
-
-        & img{
-            width: 150px;
-            background-color: lighten($secondBackgroundColor, 15%);
-        }
-    }
-    .description {
-        
-        text-align: center;
-    }  
+  }
+  .description {
+    text-align: center;
+  }
 }

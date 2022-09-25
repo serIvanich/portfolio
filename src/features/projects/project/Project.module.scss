@@ -2,97 +2,93 @@
 @import '../../../common/styles/sass/variables.scss';
 
 .project {
-    @include itemBlock(300px, 280px);
-    //margin-bottom: 50px;
-    border-radius: 5px;
-    @include shadowBox();
-        
-    .projectPictureBlock {
-        position: relative;
-        width: 100%;
-        height: 210px;
-        border-radius: 3px;
-        background-color: cadetblue;
-        .projectLink {
-            position: absolute;
-            left: 100px;
-            top: 90px;
-            width: 100px;
-            background-color: crimson;
-            font-size: 1.3em;
-            text-align: center;
-            text-decoration: none;
-            color: $textColor;
-            opacity: .5;
-            z-index: 11;
-        }
+  @include itemBlock(300px, 280px);
+  //margin-bottom: 50px;
+  border-radius: 5px;
+  @include shadowBox();
 
-        &:hover {
-            &::before {
-                position: absolute;
-                content: '';
-                right: 0;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                background-color: rgba($color: #000000, $alpha: 0.4);
-                z-index: 10;
-            }
-        }
+  .projectPictureBlock {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    border-radius: 3px;
+    background-color: cadetblue;
+    .projectLink {
+      position: absolute;
+      left: 100px;
+      top: 90px;
+      width: 100px;
+      background-color: crimson;
+      font-size: 1.3em;
+      text-align: center;
+      text-decoration: none;
+      color: $textColor;
+      opacity: 0.5;
+      z-index: 11;
     }
 
-    .projectTitleDescription {
-        position: relative;
-        outline: none;
-        z-index: 0;
-        padding-bottom: 5px;
-        cursor: pointer;
-
-        &::before {
-            position: absolute;
-            content: '';
-            width: 100%;
-            height: 3px;
-            left: 0;
-            bottom: 0;
-            background-color: $textColor;
-            z-index: -1;
-            text-decoration: underline;
-        }
-
-        &::after {
-            content: 'i';
-            position: absolute;
-            top: -10px;
-            margin-left: 15px;
-            padding: 0 8px;
-            border: solid 1px $textColor;
-            border-radius: 50%;
-            font-size: 0.5em;
-            text-align: center;
-          
-        }
+    &:hover {
+      &::before {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        z-index: 10;
+      }
     }
-    .projectTextDescription {
-        display: flex;
-        align-items: center;
-        max-width: 700px;
-        min-height: 400px;
-        padding: 20px;
-        margin: auto 50px;
-        border-radius: 7px;
-        background-color: $secondBackgroundColor;
-        font-size: 1.2em;
-        text-align: center;
+  }
 
-        @include shadowBox(2);
+  .projectTitleDescription {
+    position: relative;
+    outline: none;
+    z-index: 0;
+    padding-bottom: 5px;
+    cursor: pointer;
 
-        @include max-bp('mini') {
-            margin: auto 10px;
-            padding: 7px;
-        }
-        
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 3px;
+      left: 0;
+      bottom: 0;
+      background-color: $textColor;
+      z-index: -1;
+      text-decoration: underline;
     }
+
+    &::after {
+      content: 'i';
+      position: absolute;
+      top: -10px;
+      margin-left: 15px;
+      padding: 0 8px;
+      border: solid 1px $textColor;
+      border-radius: 50%;
+      font-size: 0.5em;
+      text-align: center;
+    }
+  }
+  .projectTextDescription {
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+    min-height: 400px;
+    padding: 20px;
+    margin: auto 50px;
+    border-radius: 7px;
+    background-color: $secondBackgroundColor;
+    font-size: 1.2em;
+    text-align: center;
+
+    @include shadowBox(2);
+
+    @include max-bp('mini') {
+      margin: auto 10px;
+      padding: 7px;
+    }
+  }
 }
-
-
