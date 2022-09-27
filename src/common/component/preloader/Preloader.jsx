@@ -1,7 +1,7 @@
 import preload from '../../../assets/image/preloader.gif'
 import s from './Preloader.module.scss'
 
-function Preloader() {
+const Preloader = () => {
   return (
     <div className={s.preloaderContainer}>
       <img src={preload} alt='' />

@@ -12,7 +12,7 @@ import chatImage from '../../assets/image/chat-image.png'
 import { projectLinks } from '../../assets/links/project-links'
 import { projectsDescription } from '../../assets/text-description/projects-description'
 
-export function Projects() {
+export const Projects = () => {
   const {
     todolist,
     socialNetwork,

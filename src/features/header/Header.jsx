@@ -65,7 +65,11 @@ export const Header = React.memo(({ changeScroll }) => {
   )
 })
 
-function MobileNavMenu({ showMobileNavbar, closeMobileMenu, openMobileMenu }) {
+const MobileNavMenu = ({
+  showMobileNavbar,
+  closeMobileMenu,
+  openMobileMenu,
+}) => {
   return (
     <div className={s.mobileNavMenu}>
       {showMobileNavbar ? (
@@ -77,7 +81,7 @@ function MobileNavMenu({ showMobileNavbar, closeMobileMenu, openMobileMenu }) {
   )
 }
 
-function GeneralNavbar({ closeMenu }) {
+const GeneralNavbar = ({ closeMenu }) => {
   return (
     <div className={s.navbarContainer}>
       <NavBar closeMenu={closeMenu} />
@@ -85,7 +89,7 @@ function GeneralNavbar({ closeMenu }) {
   )
 }
 
-function MobileNavbar({ closeMenu, styles }) {
+const MobileNavbar = ({ closeMenu, styles }) => {
   return (
     <div className={s.navbarMobileContainer} style={styles}>
       <NavBar closeMenu={closeMenu} />

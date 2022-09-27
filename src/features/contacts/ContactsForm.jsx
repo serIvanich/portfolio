@@ -1,7 +1,7 @@
 import { useFormik } from 'formik'
 import s from './ContactsForm.module.scss'
 
-export function ContactsForm({ disabled, submitForm }) {
+export const ContactsForm = ({ disabled, submitForm }) => {
   const formValidate = (values) => {
     const errors = {}
     if (!values.name) {

@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll'
 import s from './NavBar.module.scss'
 
-export function NavBar({ closeMenu }) {
+export const NavBar = ({ closeMenu }) => {
   const onClickLink = () => {
     closeMenu()
   }
@@ -16,7 +16,7 @@ export function NavBar({ closeMenu }) {
   )
 }
 
-function GeneralLink({ link, onClickLink }) {
+const GeneralLink = ({ link, onClickLink }) => {
   const title = `${link.slice(0, 1).toUpperCase()}${link.slice(1)}`
   return (
     <Link

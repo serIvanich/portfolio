@@ -1,19 +1,20 @@
 import s from './Skills.module.scss'
-import { Skill } from './skill/Skill'
+// import { Skill } from './skill/Skill'
 import { Title } from '../../common/component/Title/Title'
 import jsImg from '../../assets/image/js_logo.png'
 import htmlImg from '../../assets/image/html_logo.png'
 import cssImg from '../../assets/image/css_logo.png'
 import reactImg from '../../assets/image/react-logo.png'
 import reactReduxImg from '../../assets/image/react-redux-logo.png'
+import { NewSkill } from './skill/NewSkill'
 
-export function Skills() {
+export const Skills = () => {
   return (
     <div className={s.skillsBlock} id='skills'>
       <div className={s.skillsContainer}>
         <Title title='Skills' />
         <div className={s.allSkills}>
-          <Skill
+          {/* <Skill
             logo={jsImg}
             title='Javascript'
             description='Javascript is used by programmers across the world to create dynamic and interactive web content like applications and browsers.'
@@ -39,7 +40,12 @@ export function Skills() {
             logo={reactReduxImg}
             title='REACT-REDUX'
             description='The Redux Toolkit package is intended to be the standard way to write Redux logic.'
-          />
+          /> */}
+          <NewSkill logo={jsImg} />
+          <NewSkill logo={reactImg} />
+          <NewSkill logo={htmlImg} />
+          <NewSkill logo={reactReduxImg} />
+          <NewSkill logo={cssImg} />
         </div>
       </div>
     </div>

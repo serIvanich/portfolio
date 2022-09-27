@@ -1,6 +1,6 @@
 import s from './Skill.module.scss'
 
-export function Skill({ logo, title, description }) {
+export const Skill = ({ logo, title, description }) => {
   return (
     <div className={s.skill}>
       <div className={s.icon}>

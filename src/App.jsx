@@ -19,7 +19,7 @@ const appStatus = {
   gmailError: 'gmail-error',
 }
 
-export function App() {
+export const App = () => {
   const initialState = {
     status: appStatus.idea,
     onScroll: true,
@@ -95,7 +95,7 @@ export function App() {
   )
 }
 
-function GmailPromise({ message, closeModalContainer }) {
+const GmailPromise = ({ message, closeModalContainer }) => {
   return (
     <div className={s.modalBox}>
       <div>{message}</div>

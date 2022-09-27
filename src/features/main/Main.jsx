@@ -2,7 +2,7 @@ import s from './Main.module.scss'
 import myPhoto from '../../assets/image/my-photo2.jpg'
 import { Title } from '../../common/component/Title/Title'
 
-export function Main() {
+export const Main = () => {
   const photo = {
     backgroundImage: `url(${myPhoto})`,
     backgroundSize: 'cover',
@@ -20,7 +20,7 @@ export function Main() {
 
           <span>Hello people!</span>
           <div>
-            My name is <b>Serhii</b> and i am a FrontEnd Developer
+            My name is <b>Serhii</b> and I am a beginner FrontEnd Developer
           </div>
           <p>
             I want to improve my skills and learn new possibility of javascript.

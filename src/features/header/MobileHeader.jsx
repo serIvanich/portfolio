@@ -4,7 +4,7 @@ import s from './Header.module.scss'
 
 import { NavBar } from '../navbar/NavBar'
 
-export function MobileHeader({ changeScroll }) {
+export const MobileHeader = ({ changeScroll }) => {
   const [letOpen, setLetOpen] = useState(false)
 
   const styles = {

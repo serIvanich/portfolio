@@ -2,7 +2,12 @@ import { useState } from 'react'
 import { ModalContainer } from '../../../common/component/modal-view/ModalContainer'
 import s from './Project.module.scss'
 
-export function Project({ projectTitle, projectDescription, linkTo, style }) {
+export const Project = ({
+  projectTitle,
+  projectDescription,
+  linkTo,
+  style,
+}) => {
   const [showDescription, setShowDescription] = useState(false)
   const openDescription = () => {
     setShowDescription(true)

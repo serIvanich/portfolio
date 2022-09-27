@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll'
 import s from './RemoveWork.module.scss'
 
-export function RemoveWork() {
+export const RemoveWork = () => {
   return (
     <div className={s.removeWorkBlock}>
       <div className={s.removeWorkContainer}>

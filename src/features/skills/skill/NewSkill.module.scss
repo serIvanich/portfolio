@@ -1,0 +1,60 @@
+@import '../../../common/styles/sass/mixins.scss';
+@import '../../../common/styles/sass/variables.scss';
+.newContainer {
+  position: relative;
+  margin: 50px;
+  // top: 0;
+  // left: 0;
+  .icon {
+    // position: absolute;
+    // top: 111px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 50%;
+    border: 3px solid $borderSkillColor;
+    overflow: hidden;
+
+    & img {
+      width: 150px;
+      background-color: lighten($secondBackgroundColor, 15%);
+    }
+  }
+
+  animation: skillMoveEffect 1s ease-in-out 0s infinite;
+}
+
+@keyframes skillMoveEffect {
+  0% {
+    @include skillMove(0px, 0px);
+  }
+  10% {
+    @include skillMove(1.3px, 1.7px);
+  }
+  20% {
+    @include skillMove(1.8px, 1px);
+  }
+  30% {
+    @include skillMove(-2.5px, 3.4px);
+  }
+  40% {
+    @include skillMove(-1.3px, -1.7px);
+  }
+  50% {
+    @include skillMove(3.3px, -3.7px);
+  }
+  60% {
+    @include skillMove(2.3px, 3.7px);
+  }
+  70% {
+    @include skillMove(1.6px, 0.7px);
+  }
+  80% {
+    @include skillMove(-3.3px, 4.7px);
+  }
+  90% {
+    @include skillMove(1.3px, 1.7px);
+  }
+  100% {
+    @include skillMove(-0.3px, 1px);
+  }
+}

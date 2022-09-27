@@ -4,7 +4,7 @@ import telegramImg from '../../assets/image/telegram_logo.png'
 import linkendinImg from '../../assets/image/linkendin_logo.png'
 import { projectLinks } from '../../assets/links/project-links'
 
-export function Footer() {
+export const Footer = () => {
   const { myGithub } = projectLinks
   return (
     <div className={s.footerBlock}>
@@ -26,7 +26,7 @@ export function Footer() {
   )
 }
 
-function InfoRow({ title, value }) {
+const InfoRow = ({ title, value }) => {
   return (
     <div className={s.infoRow}>
       <div className={s.infoRowTitle}>{title}</div>
@@ -35,7 +35,7 @@ function InfoRow({ title, value }) {
   )
 }
 
-function IconLink({ link, goTo = '' }) {
+const IconLink = ({ link, goTo = '' }) => {
   return (
     <div className={s.link}>
       <a href={goTo}>

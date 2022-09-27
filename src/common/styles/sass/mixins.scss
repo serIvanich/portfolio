@@ -137,3 +137,7 @@
 @mixin mainBackgroundAnime($x, $y) {
   transform: translate($x, $y)
 };
+
+@mixin skillMove($x, $y) {
+  transform: translate($x, $y)
+}
