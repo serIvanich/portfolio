@@ -20,41 +20,41 @@
     }
   }
 
-  animation: skillMoveEffect 1s ease-in-out 0s infinite;
+  animation: skillMovesEffect 5s linear 0s infinite alternate;
 }
 
-@keyframes skillMoveEffect {
+@keyframes skillMovesEffect {
   0% {
-    @include skillMove(0px, 0px);
+    @include skillMoves();
   }
   10% {
-    @include skillMove(1.3px, 1.7px);
+    @include skillMoves();
   }
   20% {
-    @include skillMove(1.8px, 1px);
+    @include skillMoves();
   }
   30% {
-    @include skillMove(-2.5px, 3.4px);
+    @include skillMoves();
   }
   40% {
-    @include skillMove(-1.3px, -1.7px);
+    @include skillMoves();
   }
   50% {
-    @include skillMove(3.3px, -3.7px);
+    @include skillMoves();
   }
   60% {
-    @include skillMove(2.3px, 3.7px);
+    @include skillMoves();
   }
   70% {
-    @include skillMove(1.6px, 0.7px);
+    @include skillMoves();
   }
   80% {
-    @include skillMove(-3.3px, 4.7px);
+    @include skillMoves();
   }
   90% {
-    @include skillMove(1.3px, 1.7px);
+    @include skillMoves();
   }
   100% {
-    @include skillMove(-0.3px, 1px);
+    @include skillMoves();
   }
 }

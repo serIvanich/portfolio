@@ -1,13 +1,20 @@
-
 @use 'sass:color';
-
 
 @function setColor($color, $interest, $brightColor: 50) {
   @if (color.lightness($color) > $brightColor) {
     @return darken($color, $interest);
   } @else {
-    @return  lighten($color, $interest);
+    @return lighten($color, $interest);
   }
-  
 }
 
+@function getRandomNumber($maxNumber: 10px) {
+  $number: random($maxNumber);
+  @return $number;
+}
+@function randomNum($min, $max) {
+  $rand: random();
+  $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+  @return $randomNum;
+}

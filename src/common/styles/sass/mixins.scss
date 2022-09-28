@@ -6,34 +6,33 @@
 
 @mixin text($fontSize: 1.2em, $fontFamily: 'Arial, sans-serif') {
   font-family: $fontFamily; //'Arial', 'sans-serif'
-  font-size: $fontSize;  //16px;
+  font-size: $fontSize; //16px;
   line-height: 1.2em;
   color: setColor($generalBackgroundColor, 95%, 70);
-};
+}
 
-// mixin for adaptability 
+// mixin for adaptability
 @mixin max-bp($breakpoint) {
-  @media (max-width: map.get($breakpoints, $breakpoint)) { 
-    @content
+  @media (max-width: map.get($breakpoints, $breakpoint)) {
+    @content;
   }
-};
+}
 
 //adaptability settings width
 
-@mixin adaptabilityWidth($miniWidth:95%) {
+@mixin adaptabilityWidth($miniWidth: 95%) {
   width: 80%;
   @include max-bp('small') {
-    width:90%;
-    
+    width: 90%;
   }
   @include max-bp('mini') {
     width: $miniWidth;
   }
-};
+}
 
-//page block template 
+//page block template
 
-@mixin templatePageBlock($minHeight:100vh) {
+@mixin templatePageBlock($minHeight: 100vh) {
   position: relative;
   min-height: $minHeight;
   display: flex;
@@ -41,11 +40,11 @@
   background-color: $generalBackgroundColor;
 
   @include text();
-};
+}
 
 // page container template
 
-@mixin templatePageContainer($flexDirection:column) {
+@mixin templatePageContainer($flexDirection: column) {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -54,20 +53,17 @@
   justify-content: space-around;
   align-items: center;
   padding-top: 50px;
-  
-  
 
   @include max-bp('strech') {
     width: 90%;
-   
+
     line-height: 1.2em;
   }
 
   @include max-bp('mini') {
     width: 95%;
   }
-
-};
+}
 
 //  template 'box for items, item-block'
 
@@ -79,33 +75,32 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 10vh;
-  
-};
+}
 
 @mixin itemBlock($width, $minHeight: 300px) {
-    min-height: $minHeight;
-    width: $width;
-    margin: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    background-color: $secondBackgroundColor;
+  min-height: $minHeight;
+  width: $width;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @include max-bp('mini') {
-      max-width: 280px;
-      margin: 35px 0;
+  background-color: $secondBackgroundColor;
+
+  @include max-bp('mini') {
+    max-width: 280px;
+    margin: 35px 0;
   }
-};
+}
 
 //setting page title
-@mixin sideNamePage{
+@mixin sideNamePage {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;  
-  display: flex;    
-  flex-flow: row nowrap;   
+  left: 0;
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   width: calc((100vw - 27.875em) / 2);
@@ -119,25 +114,32 @@
   writing-mode: tb-rl;
   text-align: center;
   transform: rotate(180deg);
-};
-
+}
 
 //box shadow tamplate
 @mixin shadowBox($n: 1) {
-  box-shadow:0 0 13px*$n 7px*$n rgba($color: color.invert($generalBackgroundColor, 100%), $alpha: 0.9);
-};
+  box-shadow: 0 0 13px * $n 7px * $n
+    rgba($color: color.invert($generalBackgroundColor, 100%), $alpha: 0.9);
+}
 
 //animation for main taitle
-@mixin transformTitle($x: 1,$y: 1, $degAngy: 180deg) {
+@mixin transformTitle($x: 1, $y: 1, $degAngy: 180deg) {
   transform: scale($x, $y) rotate($degAngy);
-};
+}
 
 // animation for main background
 
 @mixin mainBackgroundAnime($x, $y) {
-  transform: translate($x, $y)
-};
+  transform: translate($x, $y);
+}
 
-@mixin skillMove($x, $y) {
-  transform: translate($x, $y)
+@mixin skillMoves() {
+  transform: translate(#{randomNum(-11, 11)}px, #{randomNum(-11, 11)}px)
+    rotate3d(
+      #{randomNum(-50, 50)},
+      #{randomNum(-50, 50)},
+      #{randomNum(-50, 50)},
+      #{randomNum(-180, 180)}deg
+    )
+    skew(#{randomNum(-23, 23)}deg, #{randomNum(-23, 23)}deg);
 }
