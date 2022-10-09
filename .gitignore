@@ -24,6 +24,3 @@ yarn-error.log*
 
 .idea/*
 
-/.eslintrc.json
-/.prettierrc.json
-/.eslintignore
