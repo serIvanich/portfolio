@@ -20,7 +20,7 @@ export function Main() {
 
           <span>Hello people!</span>
           <div>
-            My name is <b>Serhii</b> and i am a FrontEnd Developer
+            My name is <b>Serhii</b> and I am a FrontEnd Developer
           </div>
           <p>
             I want to improve my skills and learn new possibility of javascript.
